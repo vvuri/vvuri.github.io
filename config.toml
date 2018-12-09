@@ -1,6 +1,22 @@
 baseURL = "http://vvuri.github.io/"
 languageCode = "ru"
-title = "Personal Site"
 
-theme = ""
+contentdir = "content"
+publishdir = "public"
+builddrafts = false
+baseUrl = ""
+canonifyurls = true
+title = "Personal Site"
+author = "vvuri"
+theme = "pixyll"
+disqusShortname = "vvuri"
+
+[indexes]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  search_engine = false
+  twitter_username = "vvuri"
+  paginate = true
 
