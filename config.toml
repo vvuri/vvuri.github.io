@@ -1,4 +1,4 @@
-baseURL = "http://vvuri.github.io/"
+baseURL = "https://vvuri.github.io"
 languageCode = "ru"
 
 contentdir = "content"
