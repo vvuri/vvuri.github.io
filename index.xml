@@ -1,23 +1,126 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Personal Site on Personal Site </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
+    <title>Personal Site</title>
     <link>/</link>
+    <description>Recent content on Personal Site</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
+    <lastBuildDate>Thu, 13 Dec 2018 23:27:56 +0300</lastBuildDate>
     
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    <updated>Mon, 10 Dec 2018 22:47:58 MSK</updated>
     
     <item>
-      <title>Start New Blog</title>
-      <link>/post/start-new-blog/</link>
-      <pubDate>Mon, 10 Dec 2018 22:47:58 MSK</pubDate>
+      <title>VSCode</title>
+      <link>/post/devops/vscode/</link>
+      <pubDate>Thu, 13 Dec 2018 23:27:56 +0300</pubDate>
       
-      <guid>/post/start-new-blog/</guid>
+      <guid>/post/devops/vscode/</guid>
+      <description>Работал я с различными IDE. На мой взгляд, лучшей для разработки была среда Delphi. Так 3-я вресия работала прекрасно на 8 Мбайтах. С трассировщиком отладки, с брекпоинтами, с компонентами и редактором форм.
+Eclips - тормознутый был с самого начала и бестолковый по окнам настройки.
+Notepad++ - шведский нож, работабть можно с кучей форматов, но при этом не так до реды разработки ой как далеко.
+Sublime - отличный блокнот - притом кросплатформенный и уже с кучей дополнительных модулей.</description>
+    </item>
+    
+    <item>
+      <title>Мельница на Нашем</title>
+      <link>/post/hobby/melnica/</link>
+      <pubDate>Mon, 10 Dec 2018 22:47:58 +0300</pubDate>
+      
+      <guid>/post/hobby/melnica/</guid>
       <description>Мельница - воздух Начинаю свой блог с группы Мельница.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sat, 08 Dec 2018 16:42:18 +0400</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Few words about project.</description>
+    </item>
+    
+    <item>
+      <title>Debian</title>
+      <link>/post/devops/debian/</link>
+      <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
+      
+      <guid>/post/devops/debian/</guid>
+      <description>Архитекутура и компоненты ПК $ less /proc/cpuinfo $ lscpu $ free $ dpkg --print-architecture - архитектура ПК  мониторинг всего: # netstat -lnp # dmsetup ls # lvdisplay # lsblk $ uptime - время работы и загрузка за последние 3 часа $ strace uptime - что вызывает вообще - можно ковырять софт # strace uptime 2&amp;gt;&amp;amp;1 | grep open - все открываемые файлы $ pstree - дерево процессов но без ID $ du -h -s /var/cache/apt/archives/ - SIZE dir  htop R — [running or runnable] запущенные или находятся в очереди на запуск S — [interruptible sleep] прерываемый сон D — [uninterruptible sleep] непрерываемый сон (в основном IO) Z — [zombie] процесс зомби, прекращенный, но не забранный родителем T — Остановленный сигналом управления заданиями t — Остановленный отладчиком X — Мёртвый (не должен показываться) детальней тут</description>
+    </item>
+    
+    <item>
+      <title>GIT</title>
+      <link>/post/devops/gitlab/</link>
+      <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
+      
+      <guid>/post/devops/gitlab/</guid>
+      <description>&lt;h4 id=&#34;git-gitlab&#34;&gt;GIT GITLAB&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ericdouglas.github.io/2016/04/01/Git-Useful-Tips/&#34;&gt;Git Flow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://eax.me/git-commands/&#34;&gt;На русском часть команд&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jenkins</title>
+      <link>/post/devops/jenkins/</link>
+      <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
+      
+      <guid>/post/devops/jenkins/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Jenkins&lt;/strong&gt; - инстумент автоматизации. Бесплатен.
+Groovy  в качестве встроенного языка сценариев.
+Большое число plugin. Большое сообщество.
+Расширяем, но требует Java VM для работы.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>/post/devops/markdown/</link>
+      <pubDate>Sun, 16 Apr 2017 14:24:08 +0300</pubDate>
+      
+      <guid>/post/devops/markdown/</guid>
+      <description>&lt;p&gt;Достаточно подробно &lt;a href=&#34;https://learn.getgrav.org/content/media&#34;&gt;https://learn.getgrav.org/content/media&lt;/a&gt;
+описана так же шапка - это линки на папки и маршрутизация
+отличный
+редактор с двумя окнами под win free &lt;a href=&#34;http://markdownpad.com/&#34;&gt;http://markdownpad.com/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jasmine in Python</title>
+      <link>/post/python/jasminepy/</link>
+      <pubDate>Sun, 16 Apr 2017 14:19:23 +0300</pubDate>
+      
+      <guid>/post/python/jasminepy/</guid>
+      <description>&lt;p&gt;Jasmine — фреймворк для описания тестов на JavaScript, обладающий простым BDD-синтаксисом и широкими возможностями. Jasmine самодостаточен, тесты, написанные при помощи этого фреймворка можно запустить под Node без каких-либо дополнительных ухищрений.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Get Start with Selenium</title>
+      <link>/post/python/getstart-selenium/</link>
+      <pubDate>Sat, 15 Apr 2017 01:09:08 +0300</pubDate>
+      
+      <guid>/post/python/getstart-selenium/</guid>
+      <description> Selenium WebDrive first step in blog
+code on Python:
+def code(): m = 5 d = 6 if d &amp;lt; m: print(&amp;quot;Ok&amp;quot;)  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/golang/hugoongithub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/golang/hugoongithub/</guid>
+      <description>Разнесение кода и статичкских страниц в двух репозиториях 1. Создаем репозиторий и клонируем его
+$ git clone https://github.com/vvuri/hugoblog.git   Ставим hugo Создаем новый сайт bash $ hugo new site hugoblog  Создаем первый пост bash $ cd vvuri $ hugo new post/start-new-blog.md  Правим контекст в /content/post/*.md
+ Добаляем .gitignore
+ Добавляем тему оформления
+$ cd themes $ git clone https://github.com/azmelanar/hugo-theme-pixyll.git  правим файл config.toml
+ Смотрим локально, что получилось localhosyt:8000</description>
     </item>
     
   </channel>
 </rss>
-

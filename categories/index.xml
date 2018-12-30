@@ -10,5 +10,41 @@
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Designe</title>
+      <link>/categories/designe/</link>
+      <pubDate>Sun, 16 Apr 2017 14:24:08 +0300</pubDate>
+      
+      <guid>/categories/designe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/categories/linux/</link>
+      <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
+      
+      <guid>/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>/categories/programming/</link>
+      <pubDate>Sun, 16 Apr 2017 14:19:23 +0300</pubDate>
+      
+      <guid>/categories/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>/categories/python/</link>
+      <pubDate>Sun, 16 Apr 2017 14:19:23 +0300</pubDate>
+      
+      <guid>/categories/python/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
