@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Personal Site</title>
-    <link>/categories/</link>
+    <link>http://vvuri.github.io/categories/</link>
     <description>Recent content in Categories on Personal Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://vvuri.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Designe</title>
-      <link>/categories/designe/</link>
+      <link>http://vvuri.github.io/categories/designe/</link>
       <pubDate>Sun, 16 Apr 2017 14:24:08 +0300</pubDate>
       
-      <guid>/categories/designe/</guid>
+      <guid>http://vvuri.github.io/categories/designe/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>/categories/linux/</link>
+      <link>http://vvuri.github.io/categories/linux/</link>
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
-      <guid>/categories/linux/</guid>
+      <guid>http://vvuri.github.io/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>/categories/programming/</link>
+      <link>http://vvuri.github.io/categories/programming/</link>
       <pubDate>Sun, 16 Apr 2017 14:19:23 +0300</pubDate>
       
-      <guid>/categories/programming/</guid>
+      <guid>http://vvuri.github.io/categories/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>/categories/python/</link>
+      <link>http://vvuri.github.io/categories/python/</link>
       <pubDate>Sun, 16 Apr 2017 14:19:23 +0300</pubDate>
       
-      <guid>/categories/python/</guid>
+      <guid>http://vvuri.github.io/categories/python/</guid>
       <description></description>
     </item>
     

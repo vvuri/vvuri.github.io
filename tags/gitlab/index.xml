@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gitlab on Personal Site</title>
-    <link>/tags/gitlab/</link>
+    <link>http://vvuri.github.io/tags/gitlab/</link>
     <description>Recent content in Gitlab on Personal Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <lastBuildDate>Mon, 20 Nov 2017 23:27:56 +0300</lastBuildDate>
     
-	<atom:link href="/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://vvuri.github.io/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GIT</title>
-      <link>/post/devops/gitlab/</link>
+      <link>http://vvuri.github.io/post/devops/gitlab/</link>
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
-      <guid>/post/devops/gitlab/</guid>
+      <guid>http://vvuri.github.io/post/devops/gitlab/</guid>
       <description>&lt;h4 id=&#34;git-gitlab&#34;&gt;GIT GITLAB&lt;/h4&gt;
 
 &lt;ul&gt;
@@ -27,10 +27,10 @@
     
     <item>
       <title>Jenkins</title>
-      <link>/post/devops/jenkins/</link>
+      <link>http://vvuri.github.io/post/devops/jenkins/</link>
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
-      <guid>/post/devops/jenkins/</guid>
+      <guid>http://vvuri.github.io/post/devops/jenkins/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Jenkins&lt;/strong&gt; - инстумент автоматизации. Бесплатен.
 Groovy  в качестве встроенного языка сценариев.
 Большое число plugin. Большое сообщество.

@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Personal Site</title>
-    <link>/categories/python/</link>
+    <link>http://vvuri.github.io/categories/python/</link>
     <description>Recent content in Python on Personal Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <lastBuildDate>Sun, 16 Apr 2017 14:19:23 +0300</lastBuildDate>
     
-	<atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://vvuri.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Jasmine in Python</title>
-      <link>/post/python/jasminepy/</link>
+      <link>http://vvuri.github.io/post/python/jasminepy/</link>
       <pubDate>Sun, 16 Apr 2017 14:19:23 +0300</pubDate>
       
-      <guid>/post/python/jasminepy/</guid>
+      <guid>http://vvuri.github.io/post/python/jasminepy/</guid>
       <description>&lt;p&gt;Jasmine — фреймворк для описания тестов на JavaScript, обладающий простым BDD-синтаксисом и широкими возможностями. Jasmine самодостаточен, тесты, написанные при помощи этого фреймворка можно запустить под Node без каких-либо дополнительных ухищрений.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Get Start with Selenium</title>
-      <link>/post/python/getstart-selenium/</link>
+      <link>http://vvuri.github.io/post/python/getstart-selenium/</link>
       <pubDate>Sat, 15 Apr 2017 01:09:08 +0300</pubDate>
       
-      <guid>/post/python/getstart-selenium/</guid>
+      <guid>http://vvuri.github.io/post/python/getstart-selenium/</guid>
       <description> Selenium WebDrive first step in blog
 code on Python:
 def code(): m = 5 d = 6 if d &amp;lt; m: print(&amp;quot;Ok&amp;quot;)  </description>

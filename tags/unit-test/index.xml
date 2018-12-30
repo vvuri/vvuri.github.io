@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unit Test on Personal Site</title>
-    <link>/tags/unit-test/</link>
+    <link>http://vvuri.github.io/tags/unit-test/</link>
     <description>Recent content in Unit Test on Personal Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <lastBuildDate>Sun, 16 Apr 2017 14:19:23 +0300</lastBuildDate>
     
-	<atom:link href="/tags/unit-test/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://vvuri.github.io/tags/unit-test/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Jasmine in Python</title>
-      <link>/post/python/jasminepy/</link>
+      <link>http://vvuri.github.io/post/python/jasminepy/</link>
       <pubDate>Sun, 16 Apr 2017 14:19:23 +0300</pubDate>
       
-      <guid>/post/python/jasminepy/</guid>
+      <guid>http://vvuri.github.io/post/python/jasminepy/</guid>
       <description>&lt;p&gt;Jasmine — фреймворк для описания тестов на JavaScript, обладающий простым BDD-синтаксисом и широкими возможностями. Jasmine самодостаточен, тесты, написанные при помощи этого фреймворка можно запустить под Node без каких-либо дополнительных ухищрений.&lt;/p&gt;</description>
     </item>
     
