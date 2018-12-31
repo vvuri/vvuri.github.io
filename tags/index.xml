@@ -2,129 +2,129 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Personal Site</title>
-    <link>http://vvuri.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Personal Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <lastBuildDate>Mon, 20 Nov 2017 23:27:56 +0300</lastBuildDate>
     
-	<atom:link href="http://vvuri.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Debian</title>
-      <link>http://vvuri.github.io/tags/debian/</link>
+      <link>/tags/debian/</link>
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/tags/debian/</guid>
+      <guid>/tags/debian/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Devops</title>
-      <link>http://vvuri.github.io/tags/devops/</link>
+      <link>/tags/devops/</link>
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/tags/devops/</guid>
+      <guid>/tags/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>http://vvuri.github.io/tags/git/</link>
+      <link>/tags/git/</link>
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/tags/git/</guid>
+      <guid>/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gitlab</title>
-      <link>http://vvuri.github.io/tags/gitlab/</link>
+      <link>/tags/gitlab/</link>
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/tags/gitlab/</guid>
+      <guid>/tags/gitlab/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>http://vvuri.github.io/tags/golang/</link>
+      <link>/tags/golang/</link>
       <pubDate>Thu, 13 Dec 2018 23:27:56 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/tags/golang/</guid>
+      <guid>/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ide</title>
-      <link>http://vvuri.github.io/tags/ide/</link>
+      <link>/tags/ide/</link>
       <pubDate>Thu, 13 Dec 2018 23:27:56 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/tags/ide/</guid>
+      <guid>/tags/ide/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jasmine</title>
-      <link>http://vvuri.github.io/tags/jasmine/</link>
+      <link>/tags/jasmine/</link>
       <pubDate>Sun, 16 Apr 2017 14:19:23 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/tags/jasmine/</guid>
+      <guid>/tags/jasmine/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>http://vvuri.github.io/tags/javascript/</link>
+      <link>/tags/javascript/</link>
       <pubDate>Thu, 13 Dec 2018 23:27:56 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/tags/javascript/</guid>
+      <guid>/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jenkins</title>
-      <link>http://vvuri.github.io/tags/jenkins/</link>
+      <link>/tags/jenkins/</link>
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/tags/jenkins/</guid>
+      <guid>/tags/jenkins/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>http://vvuri.github.io/tags/linux/</link>
+      <link>/tags/linux/</link>
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/tags/linux/</guid>
+      <guid>/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>http://vvuri.github.io/tags/python/</link>
+      <link>/tags/python/</link>
       <pubDate>Thu, 13 Dec 2018 23:27:56 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/tags/python/</guid>
+      <guid>/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Qa</title>
-      <link>http://vvuri.github.io/tags/qa/</link>
+      <link>/tags/qa/</link>
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/tags/qa/</guid>
+      <guid>/tags/qa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Unit Test</title>
-      <link>http://vvuri.github.io/tags/unit-test/</link>
+      <link>/tags/unit-test/</link>
       <pubDate>Sun, 16 Apr 2017 14:19:23 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/tags/unit-test/</guid>
+      <guid>/tags/unit-test/</guid>
       <description></description>
     </item>
     

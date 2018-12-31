@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>GIT - Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="/post/devops/gitlab/">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/combined-min.css">
+  <link rel="stylesheet" type="text/css" href="/tipuesearch/tipuesearch.css">
+
+</head>
+<body class="">
+
+<div class="site-wrap">
+  <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="" class="site-title">Personal Site</a>
+      <nav class="site-nav right">
+      <a href="/about/">About</a>
+<a href="/tags/">Tags</a>
+<a href="/contact/">Contact</a>
+<form class="navbar-search" action="/search/index.html"
+    onsubmit="return validateForm(this.elements['q'].value);">
+    <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input">
+
+</form>
+
+      </nav>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</header>
+
+  <div class="post p2 p-responsive wrap" role="main">
+    <div class="measure">
+      <div class="post-header mb2">
+        <h1 class="py2">GIT</h1>
+        <span class="post-meta">Nov 20, 2017 by </span><br>
+        
+      </div>
+
+      <article class="post-content">
+      <h4 id="git-gitlab">GIT GITLAB</h4>
+
+<ul>
+<li><a href="https://ericdouglas.github.io/2016/04/01/Git-Useful-Tips/">Git Flow</a></li>
+<li><a href="http://eax.me/git-commands/">На русском часть команд</a></li>
+</ul>
+
+<h4 id="install-debian">Install Debian:</h4>
+
+<pre><code>$ sudo apt-get install git
+$ git --version
+  git version 1.7.10.4
+</code></pre>
+
+<h4 id="термины">Термины</h4>
+
+<ul>
+<li>помещение (push)</li>
+<li>получение (pull)</li>
+</ul>
+
+<h4 id="основной-процесс-работы-с-репозиторием">Основной процесс работы с репозиторием</h4>
+
+<ol>
+<li>GitHub - добавляем SSH key</li>
+
+<li><p>находясь в основной папке клонируем весь образ - получаем отдельную папку</p>
+
+<pre><code>$ git clone git@git.XXXXXXXXX.git 
+</code></pre></li>
+
+<li><p>все команды работают внутри</p>
+
+<pre><code>$ cd partners-installation 
+</code></pre></li>
+
+<li><p>Изменения в репозитории</p>
+
+<pre><code>$ git status =&gt; master  
+</code></pre></li>
+
+<li><p>Создаем новую ветку:</p>
+
+<pre><code>$ git checkout -b devdcm 
+</code></pre></li>
+
+<li><p>Внесение изменение и добавление или удаление</p>
+
+<pre><code>$ git add doc.yml 
+$ git rm text.txt 
+</code></pre></li>
+
+<li><p>Локальный коммит</p>
+
+<pre><code>$ git commit -m 'Add file ...' 
+</code></pre></li>
+
+<li><p>Откатится с перезаписью файлов но без удаления новых файлов</p>
+
+<pre><code>$ git reset --hard devdcm 
+</code></pre></li>
+
+<li><p>Посмотреть что менялось</p>
+
+<pre><code>$ git diff 
+</code></pre></li>
+
+<li><p>Залить на сервер</p>
+
+<pre><code>S git push origin devdcm 
+</code></pre></li>
+
+<li><p>Объединение с основной веткой</p>
+
+<pre><code>$ git checkout master
+$ git pull origin master
+$ git checkout dev
+$ git pull origin dev
+$ git merge master
+$ git push origin dev 
+</code></pre></li>
+</ol>
+
+<h4 id="дополнение">Дополнение:</h4>
+
+<ul>
+<li><p>Создать новый репозиторий:</p>
+
+<pre><code>$ git init project-name 
+</code></pre></li>
+
+<li><p>Если вы планируете клонировать его по ssh с удаленной машины, также скажите:</p>
+
+<pre><code>$ git config --bool core.bare true 
+</code></pre></li>
+
+<li><p>Переключиться на другую ветку (из тех, с которыми уже работаем):</p>
+
+<pre><code>$ git checkout some_branch 
+</code></pre></li>
+
+<li><p>Просмотреть все существующие ветви:</p>
+
+<pre><code>$ git branch -a # | grep something 
+</code></pre></li>
+
+<li><p>Удалить бранч (после мерджа):</p>
+
+<pre><code>$ git branch -d some_branch 
+</code></pre></li>
+
+<li><p>Просто удалить бранч (тупиковая ветвь):</p>
+
+<pre><code>$ git branch -D some_branch 
+</code></pre></li>
+
+<li><p>История изменений:</p>
+
+<pre><code>$ git log 
+</code></pre></li>
+
+<li><p>История изменений в обратном порядке:</p>
+
+<pre><code>$ git log --reverse 
+</code></pre></li>
+
+<li><p>История конкретного файла:</p>
+
+<pre><code>$ git log file.txt
+</code></pre></li>
+
+<li><p>Аналогично предыдущему, но с просмотром сделанных изменений:</p>
+
+<pre><code>$ git log -p file.txt
+</code></pre></li>
+
+<li><p>История с именами файлов и псевдографическим изображением бранчей:</p>
+
+<pre><code>$ git log --stat --graph
+</code></pre></li>
+
+<li><p>Изменения, сделанные в заданном коммите:</p>
+
+<pre><code>$ git show d1234edf8458ce06...
+</code></pre></li>
+
+<li><p>Посмотреть, кем в последний раз правилась каждая строка файла:</p>
+
+<pre><code>$ git blame file.txt
+</code></pre></li>
+
+<li><p>Удалить бранч из репозитория на сервере:</p>
+
+<pre><code>$ git push origin :branch-name
+</code></pre></li>
+
+<li><p>Откатиться к конкретному коммиту (хэш смотрим в «git log»):</p>
+
+<pre><code>$ git reset --hard d1234edf8458ce06...
+</code></pre></li>
+</ul>
+
+<h4 id="error-и-их-решения">Error и их решения</h4>
+
+<pre><code>$ git checkout .gitignore
+$ git reset
+</code></pre>
+      </article>
+
+      <p class="post-meta">Tags:&nbsp;
+        
+            
+            <a href="/tags/DevOps">DevOps</a>
+        
+            ,&nbsp;
+            <a href="/tags/GIT">GIT</a>
+        
+            ,&nbsp;
+            <a href="/tags/GITLAB">GITLAB</a>
+        
+      </p>
+
+      
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "vvuri" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+  </div>
+</div>
+    <footer class="footer">
+      <div class="p2 wrap">
+        <div class="measure mt1 center">
+      <nav class="social-icons icons">
+<a class="fa fa-rss rss" href="/index.xml"></a>
+
+<a class="fa fa-twitter twitter" href="https://twitter.com/vvuri"></a>
+
+</nav>
+
+          <small>
+            Copyright &#169; 2017<br>
+            Powered by <a href="http://gohugo.io/" target="_blank">Hugo</a> &amp; <a href="https://github.com/azmelanar/hugo-theme-pixyll" target="_blank">Pixyll</a>
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+
+</body>
+</html>
+

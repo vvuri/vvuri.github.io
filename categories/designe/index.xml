@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Designe on Personal Site</title>
-    <link>http://vvuri.github.io/categories/designe/</link>
+    <link>/categories/designe/</link>
     <description>Recent content in Designe on Personal Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <lastBuildDate>Sun, 16 Apr 2017 14:24:08 +0300</lastBuildDate>
     
-	<atom:link href="http://vvuri.github.io/categories/designe/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/designe/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Markdown</title>
-      <link>http://vvuri.github.io/post/devops/markdown/</link>
+      <link>/post/devops/markdown/</link>
       <pubDate>Sun, 16 Apr 2017 14:24:08 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/post/devops/markdown/</guid>
+      <guid>/post/devops/markdown/</guid>
       <description>&lt;p&gt;Достаточно подробно &lt;a href=&#34;https://learn.getgrav.org/content/media&#34;&gt;https://learn.getgrav.org/content/media&lt;/a&gt;
 описана так же шапка - это линки на папки и маршрутизация
 отличный

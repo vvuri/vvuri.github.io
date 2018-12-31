@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ide on Personal Site</title>
-    <link>http://vvuri.github.io/tags/ide/</link>
+    <link>/tags/ide/</link>
     <description>Recent content in Ide on Personal Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <lastBuildDate>Thu, 13 Dec 2018 23:27:56 +0300</lastBuildDate>
     
-	<atom:link href="http://vvuri.github.io/tags/ide/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/ide/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>VSCode</title>
-      <link>http://vvuri.github.io/post/devops/vscode/</link>
+      <link>/post/devops/vscode/</link>
       <pubDate>Thu, 13 Dec 2018 23:27:56 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/post/devops/vscode/</guid>
+      <guid>/post/devops/vscode/</guid>
       <description>Работал я с различными IDE. На мой взгляд, лучшей для разработки была среда Delphi. Так 3-я вресия работала прекрасно на 8 Мбайтах. С трассировщиком отладки, с брекпоинтами, с компонентами и редактором форм.
 Eclips - тормознутый был с самого начала и бестолковый по окнам настройки.
 Notepad++ - шведский нож, работабть можно с кучей форматов, но при этом не так до реды разработки ой как далеко.

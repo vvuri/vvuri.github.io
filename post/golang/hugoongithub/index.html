@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> - Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="/post/golang/hugoongithub/">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/combined-min.css">
+  <link rel="stylesheet" type="text/css" href="/tipuesearch/tipuesearch.css">
+
+</head>
+<body class="">
+
+<div class="site-wrap">
+  <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="" class="site-title">Personal Site</a>
+      <nav class="site-nav right">
+      <a href="/about/">About</a>
+<a href="/tags/">Tags</a>
+<a href="/contact/">Contact</a>
+<form class="navbar-search" action="/search/index.html"
+    onsubmit="return validateForm(this.elements['q'].value);">
+    <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input">
+
+</form>
+
+      </nav>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</header>
+
+  <div class="post p2 p-responsive wrap" role="main">
+    <div class="measure">
+      <div class="post-header mb2">
+        <h1 class="py2"></h1>
+        <span class="post-meta">Jan 1, 0001 by </span><br>
+        
+      </div>
+
+      <article class="post-content">
+      <p>Разнесение кода и статичкских страниц в двух репозиториях
+1. Создаем репозиторий и клонируем его</p>
+
+<pre><code class="language-bash">$ git clone https://github.com/vvuri/hugoblog.git
+</code></pre>
+
+<ol>
+<li>Ставим hugo</li>
+<li>Создаем новый сайт
+<code>bash    
+$ hugo new site hugoblog
+</code></li>
+<li>Создаем первый пост
+<code>bash
+$ cd vvuri
+$ hugo new post/start-new-blog.md
+</code></li>
+
+<li><p>Правим контекст в /content/post/*.md</p></li>
+
+<li><p>Добаляем .gitignore</p></li>
+
+<li><p>Добавляем тему оформления</p>
+
+<pre><code class="language-bash">$ cd themes 
+$ git clone https://github.com/azmelanar/hugo-theme-pixyll.git
+</code></pre>
+
+<p>правим файл config.toml</p></li>
+
+<li><p>Смотрим локально, что получилось localhosyt:8000</p>
+
+<pre><code class="language-bash">$ hugo server --buildDrafts --port=8000
+</code></pre>
+
+<p>после запуска чистим public</p>
+
+<pre><code class="language-bash">$ rm -rf public
+</code></pre></li>
+
+<li><p>Заливаем на Git</p>
+
+<pre><code class="language-bash">$ git add .
+$ git commit -m &quot;Initial commit&quot;
+$ git push -u origin master
+</code></pre></li>
+
+<li><p>Создаем отдельную ветку внутри основного репозитория</p>
+
+<pre><code class="language-bash">$ git submodule add -b master https://github.com/vvuri/vvuri.github.io.git public
+</code></pre></li>
+
+<li><p>Создаем статические страницы из всего набора</p>
+
+<pre><code class="language-bash">$ hugo
+</code></pre>
+
+<p>в итоге весь статический сайт в public
+меняем в config.toml http на https</p>
+
+<pre><code class="language-bash">baseURL = &quot;https://vvuri.github.io&quot;
+</code></pre></li>
+
+<li><p>Заливаем все на vvuri.github.io</p>
+
+<pre><code class="language-bash">$ cd public
+$ git add .
+$ git commit -m &quot;New Public&quot;
+$ git push https://github.com/vvuri/vvuri.github.io.git
+</code></pre></li>
+</ol>
+
+      </article>
+
+      <p class="post-meta">Tags:&nbsp;
+        
+      </p>
+
+      
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "vvuri" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+  </div>
+</div>
+    <footer class="footer">
+      <div class="p2 wrap">
+        <div class="measure mt1 center">
+      <nav class="social-icons icons">
+<a class="fa fa-rss rss" href="/index.xml"></a>
+
+<a class="fa fa-twitter twitter" href="https://twitter.com/vvuri"></a>
+
+</nav>
+
+          <small>
+            Copyright &#169; 2017<br>
+            Powered by <a href="http://gohugo.io/" target="_blank">Hugo</a> &amp; <a href="https://github.com/azmelanar/hugo-theme-pixyll" target="_blank">Pixyll</a>
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+
+</body>
+</html>
+

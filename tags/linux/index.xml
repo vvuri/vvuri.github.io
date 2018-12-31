@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Personal Site</title>
-    <link>http://vvuri.github.io/tags/linux/</link>
+    <link>/tags/linux/</link>
     <description>Recent content in Linux on Personal Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <lastBuildDate>Mon, 20 Nov 2017 23:27:56 +0300</lastBuildDate>
     
-	<atom:link href="http://vvuri.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Debian</title>
-      <link>http://vvuri.github.io/post/devops/debian/</link>
+      <link>/post/devops/debian/</link>
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
-      <guid>http://vvuri.github.io/post/devops/debian/</guid>
+      <guid>/post/devops/debian/</guid>
       <description>Архитекутура и компоненты ПК $ less /proc/cpuinfo $ lscpu $ free $ dpkg --print-architecture - архитектура ПК  мониторинг всего: # netstat -lnp # dmsetup ls # lvdisplay # lsblk $ uptime - время работы и загрузка за последние 3 часа $ strace uptime - что вызывает вообще - можно ковырять софт # strace uptime 2&amp;gt;&amp;amp;1 | grep open - все открываемые файлы $ pstree - дерево процессов но без ID $ du -h -s /var/cache/apt/archives/ - SIZE dir  htop R — [running or runnable] запущенные или находятся в очереди на запуск S — [interruptible sleep] прерываемый сон D — [uninterruptible sleep] непрерываемый сон (в основном IO) Z — [zombie] процесс зомби, прекращенный, но не забранный родителем T — Остановленный сигналом управления заданиями t — Остановленный отладчиком X — Мёртвый (не должен показываться) детальней тут</description>
     </item>
     

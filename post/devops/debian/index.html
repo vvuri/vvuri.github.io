@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Debian - Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="/post/devops/debian/">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/combined-min.css">
+  <link rel="stylesheet" type="text/css" href="/tipuesearch/tipuesearch.css">
+
+</head>
+<body class="">
+
+<div class="site-wrap">
+  <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="" class="site-title">Personal Site</a>
+      <nav class="site-nav right">
+      <a href="/about/">About</a>
+<a href="/tags/">Tags</a>
+<a href="/contact/">Contact</a>
+<form class="navbar-search" action="/search/index.html"
+    onsubmit="return validateForm(this.elements['q'].value);">
+    <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input">
+
+</form>
+
+      </nav>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</header>
+
+  <div class="post p2 p-responsive wrap" role="main">
+    <div class="measure">
+      <div class="post-header mb2">
+        <h1 class="py2">Debian</h1>
+        <span class="post-meta">Nov 20, 2017 by </span><br>
+        
+      </div>
+
+      <article class="post-content">
+      
+
+<h4 id="архитекутура-и-компоненты-пк">Архитекутура и компоненты ПК</h4>
+
+<pre><code class="language-bash">$ less /proc/cpuinfo 
+$ lscpu
+$ free 
+$ dpkg --print-architecture - архитектура ПК
+</code></pre>
+
+<h4 id="мониторинг-всего">мониторинг всего:</h4>
+
+<pre><code class="language-bash"># netstat -lnp 
+# dmsetup ls 
+# lvdisplay 
+# lsblk
+$ uptime        - время работы и загрузка за последние 3 часа
+$ strace uptime - что вызывает вообще - можно ковырять софт
+# strace uptime 2&gt;&amp;1 | grep open     - все открываемые файлы
+$ pstree        - дерево процессов но без ID
+$ du -h -s /var/cache/apt/archives/  - SIZE dir
+</code></pre>
+
+<h4 id="htop">htop</h4>
+
+<p><em>R</em> — [running or runnable] запущенные или находятся в очереди на запуск <br>
+<em>S</em> — [interruptible sleep] прерываемый сон <br>
+<em>D</em> — [uninterruptible sleep] непрерываемый сон (в основном IO) <br>
+<em>Z</em> — [zombie] процесс зомби, прекращенный, но не забранный родителем <br>
+<em>T</em> — Остановленный сигналом управления заданиями <br>
+<em>t</em> — Остановленный отладчиком <br>
+<em>X</em> — Мёртвый (не должен показываться) <br>
+<a href="https://habrahabr.ru/post/316806/">детальней тут</a></p>
+
+<h4 id="rdp-client">RDP client</h4>
+
+<pre><code class="language-bash">$ sudo apt-add-repository ppa:remmina-ppa-team/remmina-next 
+$ sudo apt-get update 
+$ sudo apt-get install remmina remmina-plugin-rdp 
+</code></pre>
+
+<h4 id="рабочие-компнды">Рабочие компнды</h4>
+
+<blockquote>
+<p>Extract tar gz</p>
+
+<pre><code class="language-bash">$ tar -zxvf {file.tar.gz}
+</code></pre>
+
+<p>Dump</p>
+
+<pre><code class="language-bash">$ tcpdump -nq -s 0 -i eth0 -w /tmp/dump.pcap
+</code></pre>
+
+<p>показать как дерево</p>
+
+<pre><code class="language-bash">tree -d /var/log/
+или  
+$ ls -R | grep &quot;:$&quot; | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'
+</code></pre>
+
+<p>переход в домашний каталог | <code>$ cd ~</code> <br></p>
+
+<h4 id="конфигурирование">Конфигурирование</h4>
+
+<blockquote>
+<p>перечитать .profile <code>sh   $ . ~/.profile</code> <br>
+&gt; тут прописываются dns nameserver <code>sh   # cat /etc/resolv.conf</code> <br>
+&gt; Добавляем в репозиторий <code># vi /etc/apt/sources.list</code> <br>
+&gt; Имя системы это hostname  <code>$ hostname jenkins</code> <br>
+&gt; тут можно указать на постоянной основе <code>$ cat /etc/hostname</code> <br></p>
+
+<h4 id="создание-образа-диска">Создание образа диска:</h4>
+
+<blockquote>
+<pre><code class="language-bash"># dd if=/dev/cdrom of=image.iso
+</code></pre>
+
+<p>попробовать его прочитать, игнорируя ошбки чтения:</p>
+
+<pre><code class="language-bash"># dd if=/dev/cdrom of=image.iso conv=noerror
+</code></pre>
+
+<p>смонтировать данный образ</p>
+
+<pre><code class="language-bash"># mount -o loop image.iso /mnt/image
+</code></pre>
+</blockquote>
+</blockquote>
+
+<p>не оптимальное решение клонирования жесткого диска:</p>
+
+<pre><code class="language-bash"># dd if=/dev/sda of=/dev/sdb bs=4096
+</code></pre>
+
+<p>бекап раздела по сети<br></p>
+
+<pre><code class="language-bash"># dd if=/dev/DEVICE | ssh user@host «dd of=/home/user/DEVICE.img».
+</code></pre>
+
+<p>MBR расположена в первых 512 байтах жесткого диска, и состоит из таблицы разделов, загрузчика и пары доп. байт. Иногда, ее приходится бекапить, восстанавливать и т.д. Бекап выполняется так:<br></p>
+
+<pre><code class="language-bash"># dd if=/dev/sda of=mbr.img bs=512 count=1
+</code></pre>
+
+<p>Восстановить можно проще:<br></p>
+
+<pre><code class="language-bash"># dd if=mbr.img of=/dev/sda
+# dd if=/dev/urandom of=/dev/null bs=100M count=5
+</code></pre>
+
+<p>if:   указывает на источник, т.е. на то, откуда копируем.<br>
+of:   указывает на файл назначения. То же самое, писать можем как в обычный файл, так и напрямую в устройство.<br>
+bs:   количество байт, которые будут записаны за раз.<br>
+count:    как раз то число, которое указывает: сколько кусочков будет скопировано.<br>
+Описанная команда читает 5*100 мегабайт из устройства /dev/urandom в устройство /dev/null. - система сгенерирует 500 мегабайт случайных значений и запишет их в null устройство.<br></p>
+</blockquote>
+
+<h4 id="копирование-scp">Копирование SCP</h4>
+
+<blockquote>
+<p>Команда копирования локального SourceFile на удалённый хост:</p>
+
+<pre><code class="language-bash"># scp SourceFile user@host:/directory/TargetFile
+</code></pre>
+
+<p>Команда копирования SourceFile с удалённого хоста:</p>
+
+<pre><code class="language-bash"># scp user@host:/directory/SourceFile TargetFile
+$ scp nin@zoom:/home/bigeye/l_ipp_8.1.tgz ~/
+</code></pre>
+
+<p>Рекурсивно с подкаталогами -r</p>
+
+<pre><code class="language-bash">$ scp -r root@ux:/home/da/test ~/ 
+</code></pre>
+</blockquote>
+
+<h4 id="ставим-хром">ставим Хром:</h4>
+
+<blockquote>
+<p>качаем с google.com/chrome</p>
+
+<pre><code class="language-bash">sudo apt-get install libappindicator1
+sudo dpkg -i google-chrome-stable_current_amd64_2.deb
+</code></pre>
+</blockquote>
+
+<h4 id="проверка-на-взлом">проверка на взлом</h4>
+
+<blockquote>
+<pre><code class="language-bash">$ lastlog
+$ history
+$ sudo vi /var/log/auth.log
+с какого IP подключались:
+$ zgrep sshd /var/log/auth.log* | grep rhost | sed -re 's/.*rhost=([^ ]+).*/\1/' | sort –u
+Проверьте журналы Apache:
+$ sudo less /var/log/apache2/access.log
+$ sudo less /var/log/apache2/error.log
+$ ps aux | less
+$ crontab -l | grep -v ‘^#’
+Запрет входа root-пользователей по SSH
+$ sudo vi /etc/ssh/sshd_config
+PermitRootLogin no
+</code></pre>
+</blockquote>
+
+<h4 id="sound">Sound</h4>
+
+<blockquote>
+<p><a href="https://wiki.archlinux.org/index.php/PulseAudio/Examples_%28%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%29">pulseaudio</a>
+что бы сделать звук с наушников по-умоляанию:</p>
+
+<pre><code class="language-bash">sudo vi /etc/pulse/daemon.conf
+default-sample-channels = 2
+sudo pulseaudio -k
+sudo pulseaudio --check
+</code></pre>
+</blockquote>
+
+      </article>
+
+      <p class="post-meta">Tags:&nbsp;
+        
+            
+            <a href="/tags/DevOps">DevOps</a>
+        
+            ,&nbsp;
+            <a href="/tags/Linux">Linux</a>
+        
+            ,&nbsp;
+            <a href="/tags/Debian">Debian</a>
+        
+      </p>
+
+      
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "vvuri" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+  </div>
+</div>
+    <footer class="footer">
+      <div class="p2 wrap">
+        <div class="measure mt1 center">
+      <nav class="social-icons icons">
+<a class="fa fa-rss rss" href="/index.xml"></a>
+
+<a class="fa fa-twitter twitter" href="https://twitter.com/vvuri"></a>
+
+</nav>
+
+          <small>
+            Copyright &#169; 2017<br>
+            Powered by <a href="http://gohugo.io/" target="_blank">Hugo</a> &amp; <a href="https://github.com/azmelanar/hugo-theme-pixyll" target="_blank">Pixyll</a>
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+
+</body>
+</html>
+
