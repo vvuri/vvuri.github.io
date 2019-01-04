@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> - Personal Site</title>
+  <title>Hugo on GitHub - Personal Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -49,13 +49,13 @@
   <div class="post p2 p-responsive wrap" role="main">
     <div class="measure">
       <div class="post-header mb2">
-        <h1 class="py2"></h1>
-        <span class="post-meta">Jan 1, 0001 by </span><br>
+        <h2 class="py2">Hugo on GitHub</h2>
+        <span class="post-meta">Dec 10, 2018 by </span><br>
         
       </div>
 
       <article class="post-content">
-      <p>Разнесение кода и статичкских страниц в двух репозиториях
+      <p>Разнесение кода и статических страниц в двух репозиториях
 1. Создаем репозиторий и клонируем его</p>
 
 <pre><code class="language-bash">$ git clone https://github.com/vvuri/hugoblog.git
@@ -125,11 +125,37 @@ $ git add .
 $ git commit -m &quot;New Public&quot;
 $ git push https://github.com/vvuri/vvuri.github.io.git
 </code></pre></li>
+
+<li><p>Если надо удалить субмодуль</p>
+
+<pre><code>git submodule deinit &lt;path_to_submodule&gt;
+git rm &lt;path_to_submodule&gt;
+git commit-m &quot;Removed submodule &quot;
+rm -rf .git/modules/&lt;path_to_submodule&gt;
+</code></pre></li>
+
+<li><p>В дальнейшем</p>
+
+<pre><code>$ hugo
+$ cd public
+$ git add .
+$ git commit -m &quot;New Public&quot;
+$ git push -u origin master
+</code></pre></li>
 </ol>
 
       </article>
 
       <p class="post-meta">Tags:&nbsp;
+        
+            
+            <a href="/tags/github">github</a>
+        
+            ,&nbsp;
+            <a href="/tags/JavaScript">JavaScript</a>
+        
+            ,&nbsp;
+            <a href="/tags/Golang">Golang</a>
         
       </p>
 
@@ -170,8 +196,7 @@ $ git push https://github.com/vvuri/vvuri.github.io.git
 </nav>
 
           <small>
-            Copyright &#169; 2017<br>
-            Powered by <a href="http://gohugo.io/" target="_blank">Hugo</a> &amp; <a href="https://github.com/azmelanar/hugo-theme-pixyll" target="_blank">Pixyll</a>
+            Copyright &#169; 2018 Tula<br>
           </small>
         </div>
       </div>

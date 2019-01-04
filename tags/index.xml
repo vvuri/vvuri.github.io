@@ -30,11 +30,29 @@
     </item>
     
     <item>
+      <title>Folk</title>
+      <link>/tags/folk/</link>
+      <pubDate>Mon, 10 Dec 2018 22:47:58 +0300</pubDate>
+      
+      <guid>/tags/folk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Git</title>
       <link>/tags/git/</link>
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
       <guid>/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>/tags/github/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/github/</guid>
       <description></description>
     </item>
     
@@ -104,7 +122,7 @@
     <item>
       <title>Python</title>
       <link>/tags/python/</link>
-      <pubDate>Thu, 13 Dec 2018 23:27:56 +0300</pubDate>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/python/</guid>
       <description></description>
@@ -116,6 +134,15 @@
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
       <guid>/tags/qa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rock</title>
+      <link>/tags/rock/</link>
+      <pubDate>Mon, 10 Dec 2018 22:47:58 +0300</pubDate>
+      
+      <guid>/tags/rock/</guid>
       <description></description>
     </item>
     

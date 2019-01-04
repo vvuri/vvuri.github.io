@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Jenkins - Personal Site</title>
+  <title>Jupyter in Hugo - Personal Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="keywords" content="">
-  <link rel="canonical" href="/post/devops/jenkins/">
+  <link rel="canonical" href="/post/python/hugo-ipynb/">
 
   
   
@@ -49,59 +49,65 @@
   <div class="post p2 p-responsive wrap" role="main">
     <div class="measure">
       <div class="post-header mb2">
-        <h2 class="py2">Jenkins</h2>
-        <span class="post-meta">Nov 20, 2017 by </span><br>
+        <h2 class="py2">Jupyter in Hugo</h2>
+        <span class="post-meta">Jan 1, 2019 by </span><br>
         
       </div>
 
       <article class="post-content">
-      <p><strong>Jenkins</strong> - инструмент автоматизации. Бесплатен.
-Groovy  в качестве встроенного языка сценариев.
-Большое число plugin. Большое сообщество.
-Расширяем, но требует Java VM для работы.</p>
+      <p>Добавляем возможность интеграции Jupyter файлов, как статических данных</p>
 
-<h4 id="show-version">Show version</h4>
+<p>Попробовал следующий варинт:</p>
 
-<p><code>$ java -jar /var/cache/jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ version</code></p>
+<pre><code class="language-bash">$ pip install hugo_jupyter
+</code></pre>
 
-<h4 id="upgrade">Upgrade</h4>
+<p>досталяется достаточно много модулей</p>
 
-<blockquote>
-<p><code>$ wget http://updates.jenkins-ci.org/download/war/2.26/jenkins.war</code>
-<code># ls -al /usr/share/jenkins/jenkins.war</code>
--rw-r&ndash;r&ndash; 1 root root 63350272 Jan 19  2016 /usr/share/jenkins/jenkins.war
-<code># cp  /usr/share/jenkins/jenkins.war /usr/share/jenkins/jenkins.war.previous.version</code>
-<code># cp  ./jenkins.war /usr/share/jenkins/jenkins.war</code></p>
-</blockquote>
+<pre><code>$ cd root_of_hugo_project
+$ hugo_jupyter --init
+</code></pre>
 
-<h4 id="restart">Restart</h4>
+<ul>
+<li>Запускаем Jupyter notebook</li>
+<li>Создаем новый файл</li>
+<li>название меняем на необходимое</li>
+<li>Edit - Edit Notebook Metadata</li>
+<li>Добавляем следующий заголовок
+<code>
+&quot;front-matter&quot;:{
+&quot;date&quot;:&quot;2019-01-03&quot;,
+&quot;subtitle&quot;: &quot;Add Jupyter print&quot;,
+&quot;title&quot;: &quot;Jupyter Hugo&quot;
+},
+&quot;hugo_jupyter&quot;: {
+&quot;render-to&quot;: &quot;/path/to/blog/content&quot;
+}
+</code></li>
+<li>сохраняем</li>
+<li>должен появится файл с расширением md</li>
+</ul>
 
-<p><code># java -jar /var/cache/jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ restart</code></p>
+<p>НО не выходит, не создается и что просходит пока не ясно</p>
 
-<p>после включение Config Global Sequrity - Enable - Anyone
-можно ходить с локальной машины на удаленный дженкинс
-<code># java -jar jenkins-cli.jar -s http://10.0.2.175:8080/ version</code></p>
+<p>Другой способ менее элегантный:
+- запускаем  Jupyter notebook
+- выбираем нужный файл
+- File -&gt; Download as -&gt; Markdown
+- md файл редактируем, добавляя шапку
+данный способ работает</p>
 
-<h4 id="groovy-pipeline">Groovy pipeline</h4>
+<p>[&ldquo;Полное описание&rdquo; | <a href="https://github.com/knowsuchagency/hugo_jupyter">https://github.com/knowsuchagency/hugo_jupyter</a>]</p>
 
-<blockquote>
-<p>node {
-    stage &lsquo;Does sshpass work?&rsquo;
-    sh &lsquo;sshpass -p \&lsquo;password\&rsquo; ssh user@host &ldquo;ls; hostname; whois google.com;&rdquo;&rsquo;
-}</p>
-</blockquote>
       </article>
 
       <p class="post-meta">Tags:&nbsp;
         
             
-            <a href="/tags/QA">QA</a>
+            <a href="/tags/github">github</a>
         
             ,&nbsp;
-            <a href="/tags/Jenkins">Jenkins</a>
-        
-            ,&nbsp;
-            <a href="/tags/GITLAB">GITLAB</a>
+            <a href="/tags/python">python</a>
         
       </p>
 

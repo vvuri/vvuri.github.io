@@ -31,7 +31,7 @@
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
       <guid>/post/devops/jenkins/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Jenkins&lt;/strong&gt; - инстумент автоматизации. Бесплатен.
+      <description>&lt;p&gt;&lt;strong&gt;Jenkins&lt;/strong&gt; - инструмент автоматизации. Бесплатен.
 Groovy  в качестве встроенного языка сценариев.
 Большое число plugin. Большое сообщество.
 Расширяем, но требует Java VM для работы.&lt;/p&gt;</description>
