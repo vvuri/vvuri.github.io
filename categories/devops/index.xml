@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Devops on Personal Site</title>
+    <link>/categories/devops/</link>
+    <description>Recent content in Devops on Personal Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Conda как отличная замена Pip</title>
+      <link>/post/ml/conda/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/ml/conda/</guid>
+      <description>Conda документация
+Pip - стандартный менеджер пакетов питона, позволяет устанавливать бинарные wheel сборки пакетов. Если их нет (ни в самом Pip, ни где-то еще), Pip компилирует пакеты локально. При этом могут возникнуть проблемы при сложных зависимостях, когда требуются сторонние не питон библиотеки. В этом случае удобно использовать Conda.
+Команды Pip: - pip search package_name - поиск пакета через pip - pip install package_name - установка пакета через pip
+Conda - менеджер пакетов питона, позволяет устанавливать уже скомпилированные пакеты (может работать и в режиме компиляции пакетов перед установкой).</description>
+    </item>
+    
+    <item>
+      <title>YAML</title>
+      <link>/post/devops/yaml/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/devops/yaml/</guid>
+      <description>YAML с версии 1.2 - это надмножество JSON. - все, что правильно для JSON, годится и для YAML. - По сути yaml - это расширение json. Или json подмножество yaml :) - удобно писать конфиги, которые конвертятся в json
+multiliners: ugly_multiline: &amp;quot;ugly\nugly\nugly\nugly\n&amp;quot; multiline_with_line_ending: | multiline text with ending multiline_without_line_ending: |- multiline text without ending  commands: - do something with --a long --list of --parameters - do something with --a long --list of --parameters  singleliners: simple: single line text single-line-text: &amp;gt;- single line text single-line-text-with-line-ending: &amp;gt; single line text  inheritance: _basic: &amp;amp;basic cpu: 2 ram: 2 disk: 10 os: rhel6 vm-profiles: small: &amp;lt;&amp;lt;: *basic cpu: 1 large: &amp;lt;&amp;lt;: *basic cpu: 4  inheritance: _basic: &amp;amp;basic cpu: 2 ram: 2 disk: 10 os: rhel6 vm-profiles: small: {&amp;lt;&amp;lt;: *basic, cpu: 1} large: {&amp;lt;&amp;lt;: *basic, cpu: 4}  элементы &amp;amp; и * позволяют определить ссылку на элемент и затем его использовать.</description>
+    </item>
+    
+  </channel>
+</rss>

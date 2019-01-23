@@ -6,10 +6,53 @@
     <description>Recent content in Posts on Personal Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ansible</title>
+      <link>/post/devops/ansible/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/devops/ansible/</guid>
+      <description>Install $ sudo apt-get install python-pip python-yaml python-jinja2 python-paramiko -y $ sudo pip install ansible $ python --version Python 2.7.3 $ ansible --version ansible 2.1.1.0  Отработка скрипта пишет в:
+$ sudo less -f /var/log/syslog	 Прямой вызов команд:
+$ ansible localhost -m command -a &amp;quot;python --version&amp;quot; $ ansible localhost -m shell -a &amp;quot;ps -axf | grep firefox&amp;quot; $ ansible localhost -m shell -a &amp;quot;ps -eo pcpu,user,args | sort -r -k1 | head -n5&amp;quot; $ ansible host-file-with-ip -m ping  Документация:</description>
+    </item>
+    
+    <item>
+      <title>Conda как отличная замена Pip</title>
+      <link>/post/ml/conda/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/ml/conda/</guid>
+      <description>Conda документация
+Pip - стандартный менеджер пакетов питона, позволяет устанавливать бинарные wheel сборки пакетов. Если их нет (ни в самом Pip, ни где-то еще), Pip компилирует пакеты локально. При этом могут возникнуть проблемы при сложных зависимостях, когда требуются сторонние не питон библиотеки. В этом случае удобно использовать Conda.
+Команды Pip: - pip search package_name - поиск пакета через pip - pip install package_name - установка пакета через pip
+Conda - менеджер пакетов питона, позволяет устанавливать уже скомпилированные пакеты (может работать и в режиме компиляции пакетов перед установкой).</description>
+    </item>
+    
+    <item>
+      <title>YAML</title>
+      <link>/post/devops/yaml/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/devops/yaml/</guid>
+      <description>YAML с версии 1.2 - это надмножество JSON. - все, что правильно для JSON, годится и для YAML. - По сути yaml - это расширение json. Или json подмножество yaml :) - удобно писать конфиги, которые конвертятся в json
+multiliners: ugly_multiline: &amp;quot;ugly\nugly\nugly\nugly\n&amp;quot; multiline_with_line_ending: | multiline text with ending multiline_without_line_ending: |- multiline text without ending  commands: - do something with --a long --list of --parameters - do something with --a long --list of --parameters  singleliners: simple: single line text single-line-text: &amp;gt;- single line text single-line-text-with-line-ending: &amp;gt; single line text  inheritance: _basic: &amp;amp;basic cpu: 2 ram: 2 disk: 10 os: rhel6 vm-profiles: small: &amp;lt;&amp;lt;: *basic cpu: 1 large: &amp;lt;&amp;lt;: *basic cpu: 4  inheritance: _basic: &amp;amp;basic cpu: 2 ram: 2 disk: 10 os: rhel6 vm-profiles: small: {&amp;lt;&amp;lt;: *basic, cpu: 1} large: {&amp;lt;&amp;lt;: *basic, cpu: 4}  элементы &amp;amp; и * позволяют определить ссылку на элемент и затем его использовать.</description>
+    </item>
+    
+    <item>
+      <title>Горячие клавиши Mac OS X</title>
+      <link>/post/devops/osx-key/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/devops/osx-key/</guid>
+      <description>Клавиатура со своими особенностями и обозначениями: - Command (или Cmd) ⌘ - Shift ⇧ - Option (или Alt) ⌥ - Control (или Ctrl) ⌃ - Caps Lock ⇪ - Fn
+Клавиатура [Fn-ноут] [Control-Ctrl] [Option-Alt] [Command-Cmd] [---] [Command-Cmd] [Option-Alt] Windows [Ctrl] [Win] [Alt] [---] [Alt] [Fn] [Ctrl]  Работа с системой - комбинации клавиш - Открыть Launchpad со списком установленных программ надо нажать F4 Открыть Finder (аналог проводника) надо несколько раз нажать Alt + Tab для переключения между окнами Скриншот Command + Shift +3 - Скриншот области Command + Shift + 4 и выделить область - Выделить все Command + A Скопировать Command + С Вырезать Command + X Вставить Command + V - Переходы Command + стрелка вверх для перехода в начало, и Command + стрелка вниз — в конец Переименовать файл F2/либо Return Отменить действие Command + Z Запустить поиск Command + F Закрыть активное окно Command + W - Новая вкладка Command + T Между приложениями Command + Tab и перемещайтесь между стрелками влево-вправо Параметры приложения Command + &amp;lt; Поиск помощи Command + Shift + ?</description>
+    </item>
     
     <item>
       <title>Jupyter in Hugo</title>
@@ -111,7 +154,7 @@ Groovy  в качестве встроенного языка сценариев
       <pubDate>Sun, 16 Apr 2017 14:19:23 +0300</pubDate>
       
       <guid>/post/python/jasminepy/</guid>
-      <description>&lt;p&gt;Jasmine — фреймворк для описания тестов на JavaScript, обладающий простым BDD-синтаксисом и широкими возможностями. Jasmine самодостаточен, тесты, написанные при помощи этого фреймворка можно запустить под Node без каких-либо дополнительных ухищрений.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Jasmine&lt;/strong&gt; — фреймворк для описания тестов на JavaScript, обладающий простым BDD-синтаксисом и широкими возможностями. Jasmine самодостаточен, тесты, написанные при помощи этого фреймворка можно запустить под Node без каких-либо дополнительных ухищрений.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -123,6 +166,20 @@ Groovy  в качестве встроенного языка сценариев
       <description> Selenium WebDrive first step in blog
 code on Python:
 def code(): m = 5 d = 6 if d &amp;lt; m: print(&amp;quot;Ok&amp;quot;)  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/qa/selenium-webdrive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/qa/selenium-webdrive/</guid>
+      <description>Selenium WebDriver
+ bash # pip install selenium рекомендуется virtualenv. Python 3.4 содержит модуль pyvenv Документация перевод Оригинальная документация Для Python
+ Selenium server необходим в случаях, когда вы хотите использовать remote WebDriver
+ Selenium server написан на языке Java. Для его запуска рекомендована среда Java Runtime Environment (JRE) версии 1.6 или выше. bash	java -jar selenium-server-standalone-2.x.x.jar
+  Протсейший скрипт Python:
+from selenium import webdriver from selenium.webdriver.common.keys import Keys // Класс Keys обеспечивает взаимодействие с командами клавиатуры driver = webdriver.</description>
     </item>
     
   </channel>

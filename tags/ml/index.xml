@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ml on Personal Site</title>
+    <link>/tags/ml/</link>
+    <description>Recent content in Ml on Personal Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/ml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Conda как отличная замена Pip</title>
+      <link>/post/ml/conda/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/ml/conda/</guid>
+      <description>Conda документация
+Pip - стандартный менеджер пакетов питона, позволяет устанавливать бинарные wheel сборки пакетов. Если их нет (ни в самом Pip, ни где-то еще), Pip компилирует пакеты локально. При этом могут возникнуть проблемы при сложных зависимостях, когда требуются сторонние не питон библиотеки. В этом случае удобно использовать Conda.
+Команды Pip: - pip search package_name - поиск пакета через pip - pip install package_name - установка пакета через pip
+Conda - менеджер пакетов питона, позволяет устанавливать уже скомпилированные пакеты (может работать и в режиме компиляции пакетов перед установкой).</description>
+    </item>
+    
+  </channel>
+</rss>

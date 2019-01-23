@@ -6,10 +6,31 @@
     <description>Recent content in Linux on Personal Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 20 Nov 2017 23:27:56 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ansible</title>
+      <link>/post/devops/ansible/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/devops/ansible/</guid>
+      <description>Install $ sudo apt-get install python-pip python-yaml python-jinja2 python-paramiko -y $ sudo pip install ansible $ python --version Python 2.7.3 $ ansible --version ansible 2.1.1.0  Отработка скрипта пишет в:
+$ sudo less -f /var/log/syslog	 Прямой вызов команд:
+$ ansible localhost -m command -a &amp;quot;python --version&amp;quot; $ ansible localhost -m shell -a &amp;quot;ps -axf | grep firefox&amp;quot; $ ansible localhost -m shell -a &amp;quot;ps -eo pcpu,user,args | sort -r -k1 | head -n5&amp;quot; $ ansible host-file-with-ip -m ping  Документация:</description>
+    </item>
+    
+    <item>
+      <title>YAML</title>
+      <link>/post/devops/yaml/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/devops/yaml/</guid>
+      <description>YAML с версии 1.2 - это надмножество JSON. - все, что правильно для JSON, годится и для YAML. - По сути yaml - это расширение json. Или json подмножество yaml :) - удобно писать конфиги, которые конвертятся в json
+multiliners: ugly_multiline: &amp;quot;ugly\nugly\nugly\nugly\n&amp;quot; multiline_with_line_ending: | multiline text with ending multiline_without_line_ending: |- multiline text without ending  commands: - do something with --a long --list of --parameters - do something with --a long --list of --parameters  singleliners: simple: single line text single-line-text: &amp;gt;- single line text single-line-text-with-line-ending: &amp;gt; single line text  inheritance: _basic: &amp;amp;basic cpu: 2 ram: 2 disk: 10 os: rhel6 vm-profiles: small: &amp;lt;&amp;lt;: *basic cpu: 1 large: &amp;lt;&amp;lt;: *basic cpu: 4  inheritance: _basic: &amp;amp;basic cpu: 2 ram: 2 disk: 10 os: rhel6 vm-profiles: small: {&amp;lt;&amp;lt;: *basic, cpu: 1} large: {&amp;lt;&amp;lt;: *basic, cpu: 4}  элементы &amp;amp; и * позволяют определить ссылку на элемент и затем его использовать.</description>
+    </item>
     
     <item>
       <title>Debian</title>

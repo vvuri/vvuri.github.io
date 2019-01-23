@@ -6,10 +6,21 @@
     <description>Recent content in Linux on Personal Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 20 Nov 2017 23:27:56 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ansible</title>
+      <link>/post/devops/ansible/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/devops/ansible/</guid>
+      <description>Install $ sudo apt-get install python-pip python-yaml python-jinja2 python-paramiko -y $ sudo pip install ansible $ python --version Python 2.7.3 $ ansible --version ansible 2.1.1.0  Отработка скрипта пишет в:
+$ sudo less -f /var/log/syslog	 Прямой вызов команд:
+$ ansible localhost -m command -a &amp;quot;python --version&amp;quot; $ ansible localhost -m shell -a &amp;quot;ps -axf | grep firefox&amp;quot; $ ansible localhost -m shell -a &amp;quot;ps -eo pcpu,user,args | sort -r -k1 | head -n5&amp;quot; $ ansible host-file-with-ip -m ping  Документация:</description>
+    </item>
     
     <item>
       <title>Debian</title>

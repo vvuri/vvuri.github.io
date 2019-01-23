@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>YAML - Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="/post/devops/yaml/">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/combined-min.css">
+  <link rel="stylesheet" type="text/css" href="/tipuesearch/tipuesearch.css">
+
+</head>
+<body class="">
+
+<div class="site-wrap">
+  <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="" class="site-title">Personal Site</a>
+      <nav class="site-nav right">
+      <a href="/about/">About</a>
+<a href="/tags/">Tags</a>
+<a href="/contact/">Contact</a>
+<form class="navbar-search" action="/search/index.html"
+    onsubmit="return validateForm(this.elements['q'].value);">
+    <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input">
+
+</form>
+
+      </nav>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</header>
+
+  <div class="post p2 p-responsive wrap" role="main">
+    <div class="measure">
+      <div class="post-header mb2">
+        <h2 class="py2">YAML</h2>
+        <span class="post-meta">Jan 23, 2019 by </span><br>
+        
+      </div>
+
+      <article class="post-content">
+      <p><strong>YAML</strong> с версии 1.2
+- это надмножество JSON.
+- все, что правильно для JSON, годится и для YAML.
+- По сути yaml - это расширение json. Или json подмножество yaml :)
+- удобно писать конфиги, которые конвертятся в json</p>
+
+<pre><code class="language-yaml">multiliners:
+    ugly_multiline: &quot;ugly\nugly\nugly\nugly\n&quot;
+
+    multiline_with_line_ending: |
+        multiline text
+        with ending
+
+    multiline_without_line_ending: |-
+        multiline text
+        without ending
+</code></pre>
+
+<pre><code class="language-yaml">commands:
+    - do something with --a long --list of --parameters 
+    - do something 
+        with 
+        --a long 
+        --list of 
+        --parameters     
+</code></pre>
+
+<pre><code class="language-yaml">singleliners:
+    simple: 
+        single
+        line
+        text
+
+    single-line-text: &gt;-
+        single
+        line
+        text
+
+    single-line-text-with-line-ending: &gt;
+        single
+        line
+        text
+</code></pre>
+
+<pre><code class="language-yaml">inheritance:
+    _basic: &amp;basic
+        cpu:  2
+        ram:  2
+        disk: 10
+        os: rhel6 
+
+    vm-profiles:
+        small: 
+            &lt;&lt;: *basic
+            cpu: 1
+        large: 
+            &lt;&lt;: *basic
+            cpu: 4
+</code></pre>
+
+<pre><code class="language-yaml">inheritance:
+    _basic: &amp;basic
+        cpu:  2
+        ram:  2
+        disk: 10
+        os: rhel6 
+
+    vm-profiles:
+        small: {&lt;&lt;: *basic,  cpu: 1}
+        large: {&lt;&lt;: *basic,  cpu: 4}
+</code></pre>
+
+<p>элементы &amp; и * позволяют определить ссылку на элемент и затем его использовать.</p>
+
+<pre><code class="language-yaml">references:
+    value1: &amp;reference &quot;Don't repeat yourself!&quot;  
+    value2: *reference 
+</code></pre>
+
+<pre><code class="language-yaml">json:
+    vm-profiles-yaml:
+        small:
+            cpu:  2
+            ram:  2
+            disk: 10
+            os: rhel6 
+        large:
+            cpu:  4
+            ram:  4
+            disk: 10
+            os: rhel6 
+
+    vm-profiles-json:
+        small:  { cpu: 2, ram: 2, disk: 10, os: rhel6 } 
+        large:  { cpu: 4, ram: 4, disk: 10, os: rhel6 } 
+</code></pre>
+
+<pre><code class="language-yaml">matrices:
+    matrix_json_style: [
+        [1, 0, 0],
+        [0, 1, 0],
+        [0, 0, 1],
+    ]
+    matrix_yaml_style: 
+        - [1, 0, 0]
+        - [0, 1, 0]
+        - [0, 0, 1]
+</code></pre>
+
+<p>Так же можно использовать в <strong>Python</strong>:</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; import yaml
+&gt;&gt;&gt; print(yaml.dump({(True, False): 1}))
+? !!python/tuple [true, false]
+: 1
+&gt;&gt;&gt; print(yaml.dump([['w','1', {'r': {'s': [1, 2, 3]}, 'd': 4}]]))
+
+&gt;&gt;&gt;print yaml.load(&quot;&quot;&quot;
+... name: Vorlin Laruknuzum
+... sex: Male
+... class: Priest
+... title: Acolyte
+... hp: [32, 71]
+... sp: [1, 13]
+... gold: 423
+... inventory:
+... - a Holy Book of Prayers (Words of Wisdom)
+... - an Azure Potion of Cure Light Wounds
+... - a Silver Wand of Wonder
+... &quot;&quot;&quot;)
+{'sex': 'male', 'inventory': ['a Holy', 'an Azure', 'a Silver'], 'gold': 100, 'name': 'vol'}
+
+&gt;&gt;&gt; print yaml.load(&quot;&quot;&quot;
+... - [1, 0, 0]
+... - [0, 1, 0]
+... - [0, 0, 1]
+... &quot;&quot;&quot;)
+[[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+
+&gt;&gt;&gt; yaml.load('[1, a, false]')  # парсим yaml-строку
+[1, 'a', False]
+&gt;&gt;&gt; yaml.dump([2, 'b', None])  # дампим в yaml-строку
+'[2, b, null]\n'
+
+&gt;&gt;&gt; cfg = yaml.load(open('test.yaml'))
+</code></pre>
+
+      </article>
+
+      <p class="post-meta">Tags:&nbsp;
+        
+            
+            <a href="/tags/DevOps">DevOps</a>
+        
+            ,&nbsp;
+            <a href="/tags/Linux">Linux</a>
+        
+      </p>
+
+      
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "vvuri" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+  </div>
+</div>
+    <footer class="footer">
+      <div class="p2 wrap">
+        <div class="measure mt1 center">
+      <nav class="social-icons icons">
+<a class="fa fa-rss rss" href="/index.xml"></a>
+
+<a class="fa fa-twitter twitter" href="https://twitter.com/vvuri"></a>
+
+</nav>
+
+          <small>
+            Copyright &#169; 2018 Tula<br>
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+
+</body>
+</html>
+

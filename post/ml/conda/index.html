@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Conda как отличная замена Pip - Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="/post/ml/conda/">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/combined-min.css">
+  <link rel="stylesheet" type="text/css" href="/tipuesearch/tipuesearch.css">
+
+</head>
+<body class="">
+
+<div class="site-wrap">
+  <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="" class="site-title">Personal Site</a>
+      <nav class="site-nav right">
+      <a href="/about/">About</a>
+<a href="/tags/">Tags</a>
+<a href="/contact/">Contact</a>
+<form class="navbar-search" action="/search/index.html"
+    onsubmit="return validateForm(this.elements['q'].value);">
+    <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input">
+
+</form>
+
+      </nav>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</header>
+
+  <div class="post p2 p-responsive wrap" role="main">
+    <div class="measure">
+      <div class="post-header mb2">
+        <h2 class="py2">Conda как отличная замена Pip</h2>
+        <span class="post-meta">Jan 23, 2019 by </span><br>
+        
+      </div>
+
+      <article class="post-content">
+      <p><a href="http://conda.pydata.org/docs/">Conda документация</a></p>
+
+<p><strong>Pip</strong> - стандартный менеджер пакетов питона, позволяет устанавливать бинарные wheel сборки пакетов. Если их нет (ни в самом Pip, ни где-то еще), Pip компилирует пакеты локально. При этом могут возникнуть проблемы при сложных зависимостях, когда требуются сторонние не питон библиотеки. В этом случае удобно использовать Conda.</p>
+
+<p>Команды Pip:
+- pip search package_name - поиск пакета через pip
+- pip install package_name - установка пакета через pip</p>
+
+<p><strong>Conda</strong> - менеджер пакетов питона, позволяет устанавливать уже скомпилированные пакеты (может работать и в режиме компиляции пакетов перед установкой). Также Conda - менеджер окружений системы, позволяет создавать окружения с разными версиями чего угодно (библиотеки C, низкоуровневые библиотеки и т.д.).</p>
+
+<p><strong>Conda</strong> бывает в двух версиях:
+- <em>Анаконда</em> - более 150 предустановленных пакетов (около 3 Гб) + более 250 пакетов, готовых к установке командой conda install package_name
+- <em>Миниконда</em> - более 400 пакетов, готовых к установке командой conda install package_name</p>
+
+<p><a href="https://docs.continuum.io/anaconda/pkg-docs">Список пакетов</a></p>
+
+<p>Анаконда и Миниконда включают: conda, интерпретатор питона, pip</p>
+
+<p><strong>Команды Conda</strong>:
+&gt; conda search package_name  - поиск пакета через conda
+&gt; conda install package_name - установка пакета через conda
+&gt; conda install - установка всего стандартного набора пакетов - более 150, около 3 Гб
+&gt; conda list - список установленных пакетов
+&gt; conda update conda - обновление conda
+&gt; conda clean -t - удаление кеша - архивов .tar.bz2, которые могут занимать много места и не нужны</p>
+
+<blockquote>
+<p>conda install &ndash;name bunnies beautifulsoup4
+conda install name_lib=version
+conda install &ndash;channel <a href="https://conda.anaconda.org/pandas">https://conda.anaconda.org/pandas</a> bottleneck</p>
+</blockquote>
+
+<p><strong>Env</strong> - так же создает виртуальное окружение:</p>
+
+<pre><code class="language-bash">$ conda env --help
+create a new environment named /envs/snowflakes with the program Biopython.
+$ conda create --name snowflakes biopython
+$ source activate snowflakes
+$ source deactivate
+Создание второго окуржения с отличной версией питона:
+$ conda create --name bunnies python=3 astroid babel
+List env:
+$ conda info --envs
+Active env by *:
+$ conda info --envs
+Remove:
+$ conda remove --name flowers --all
+Дополнительные возможности: http://conda.pydata.org/docs/using/envs.html
+</code></pre>
+
+<p><strong>Install</strong>:
+1. <a href="http://conda.pydata.org/miniconda.html">Download miniconda</a>
+2. <code>$ bash Miniconda3-latest-Linux-x86_64.sh</code>
+3. <code>$ conda update conda</code>
+4. Если основной у нас 2.7 мы ставим conda 2.7 а потом будем указывать
+5. <code>$ conda create --name snakes python=3</code></p>
+
+<p>Для работы с <strong>ML</strong> ставим еще Jupyter и библиотеке:
+- <code>$ conda install Jupyter</code>
+- <code>$ conda install numpy pandas matplotlib scikit-learn</code></p>
+
+      </article>
+
+      <p class="post-meta">Tags:&nbsp;
+        
+            
+            <a href="/tags/DevOps">DevOps</a>
+        
+            ,&nbsp;
+            <a href="/tags/ML">ML</a>
+        
+            ,&nbsp;
+            <a href="/tags/Conda">Conda</a>
+        
+      </p>
+
+      
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "vvuri" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+  </div>
+</div>
+    <footer class="footer">
+      <div class="p2 wrap">
+        <div class="measure mt1 center">
+      <nav class="social-icons icons">
+<a class="fa fa-rss rss" href="/index.xml"></a>
+
+<a class="fa fa-twitter twitter" href="https://twitter.com/vvuri"></a>
+
+</nav>
+
+          <small>
+            Copyright &#169; 2018 Tula<br>
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+
+</body>
+</html>
+

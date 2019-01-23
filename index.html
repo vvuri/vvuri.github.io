@@ -58,6 +58,102 @@
                         
                         
                             <div class="post">
+  <a class="post-link" href="/post/devops/osx-key/">
+  <p class="post-meta left">Jan 23, 2019</p>
+  <p class="post-meta right"></p>
+  <div class="clearfix"></div>
+  <h3 class="h2 post-title">Горячие клавиши Mac OS X </h3>
+  <p class="post-summary">Клавиатура со своими особенностями и обозначениями: - Command (или Cmd) ⌘ - Shift ⇧ - Option (или Alt) ⌥ - Control (или Ctrl) ⌃ - Caps Lock ⇪ - Fn
+Клавиатура [Fn-ноут] [Control-Ctrl] [Option-Alt] [Command-Cmd] [---] [Command-Cmd] [Option-Alt] Windows [Ctrl] [Win] [Alt] [---] [Alt] [Fn] [Ctrl]  Работа с системой - комбинации клавиш - Открыть Launchpad со списком установленных программ надо нажать F4 Открыть Finder (аналог проводника) надо несколько раз нажать Alt + Tab для переключения между окнами Скриншот Command + Shift +3 - Скриншот области Command + Shift + 4 и выделить область - Выделить все Command + A Скопировать Command + С Вырезать Command + X Вставить Command + V - Переходы Command + стрелка вверх для перехода в начало, и Command + стрелка вниз — в конец Переименовать файл F2/либо Return Отменить действие Command + Z Запустить поиск Command + F Закрыть активное окно Command + W - Новая вкладка Command + T Между приложениями Command + Tab и перемещайтесь между стрелками влево-вправо Параметры приложения Command + &lt; Поиск помощи Command + Shift + ?</p>
+  </a>
+  
+  <p class="post-meta">Tags:&nbsp;
+  
+      
+      <a href="/tags/DevOps">DevOps</a>
+  
+      ,&nbsp;
+      <a href="/tags/Mac">Mac</a>
+  
+      ,&nbsp;
+      <a href="/tags/OSX">OSX</a>
+  </p>
+</div>
+
+                        
+                            <div class="post">
+  <a class="post-link" href="/post/devops/yaml/">
+  <p class="post-meta left">Jan 23, 2019</p>
+  <p class="post-meta right"></p>
+  <div class="clearfix"></div>
+  <h3 class="h2 post-title">YAML </h3>
+  <p class="post-summary">YAML с версии 1.2 - это надмножество JSON. - все, что правильно для JSON, годится и для YAML. - По сути yaml - это расширение json. Или json подмножество yaml :) - удобно писать конфиги, которые конвертятся в json
+multiliners: ugly_multiline: &quot;ugly\nugly\nugly\nugly\n&quot; multiline_with_line_ending: | multiline text with ending multiline_without_line_ending: |- multiline text without ending  commands: - do something with --a long --list of --parameters - do something with --a long --list of --parameters  singleliners: simple: single line text single-line-text: &gt;- single line text single-line-text-with-line-ending: &gt; single line text  inheritance: _basic: &amp;basic cpu: 2 ram: 2 disk: 10 os: rhel6 vm-profiles: small: &lt;&lt;: *basic cpu: 1 large: &lt;&lt;: *basic cpu: 4  inheritance: _basic: &amp;basic cpu: 2 ram: 2 disk: 10 os: rhel6 vm-profiles: small: {&lt;&lt;: *basic, cpu: 1} large: {&lt;&lt;: *basic, cpu: 4}  элементы &amp; и * позволяют определить ссылку на элемент и затем его использовать.</p>
+  </a>
+  
+  <p class="post-meta">Tags:&nbsp;
+  
+      
+      <a href="/tags/DevOps">DevOps</a>
+  
+      ,&nbsp;
+      <a href="/tags/Linux">Linux</a>
+  </p>
+</div>
+
+                        
+                            <div class="post">
+  <a class="post-link" href="/post/ml/conda/">
+  <p class="post-meta left">Jan 23, 2019</p>
+  <p class="post-meta right"></p>
+  <div class="clearfix"></div>
+  <h3 class="h2 post-title">Conda как отличная замена Pip </h3>
+  <p class="post-summary">Conda документация
+Pip - стандартный менеджер пакетов питона, позволяет устанавливать бинарные wheel сборки пакетов. Если их нет (ни в самом Pip, ни где-то еще), Pip компилирует пакеты локально. При этом могут возникнуть проблемы при сложных зависимостях, когда требуются сторонние не питон библиотеки. В этом случае удобно использовать Conda.
+Команды Pip: - pip search package_name - поиск пакета через pip - pip install package_name - установка пакета через pip
+Conda - менеджер пакетов питона, позволяет устанавливать уже скомпилированные пакеты (может работать и в режиме компиляции пакетов перед установкой).</p>
+  </a>
+  
+  <p class="post-meta">Tags:&nbsp;
+  
+      
+      <a href="/tags/DevOps">DevOps</a>
+  
+      ,&nbsp;
+      <a href="/tags/ML">ML</a>
+  
+      ,&nbsp;
+      <a href="/tags/Conda">Conda</a>
+  </p>
+</div>
+
+                        
+                            <div class="post">
+  <a class="post-link" href="/post/devops/ansible/">
+  <p class="post-meta left">Jan 23, 2019</p>
+  <p class="post-meta right"></p>
+  <div class="clearfix"></div>
+  <h3 class="h2 post-title">Ansible </h3>
+  <p class="post-summary">Install $ sudo apt-get install python-pip python-yaml python-jinja2 python-paramiko -y $ sudo pip install ansible $ python --version Python 2.7.3 $ ansible --version ansible 2.1.1.0  Отработка скрипта пишет в:
+$ sudo less -f /var/log/syslog	 Прямой вызов команд:
+$ ansible localhost -m command -a &quot;python --version&quot; $ ansible localhost -m shell -a &quot;ps -axf | grep firefox&quot; $ ansible localhost -m shell -a &quot;ps -eo pcpu,user,args | sort -r -k1 | head -n5&quot; $ ansible host-file-with-ip -m ping  Документация:</p>
+  </a>
+  
+  <p class="post-meta">Tags:&nbsp;
+  
+      
+      <a href="/tags/DevOps">DevOps</a>
+  
+      ,&nbsp;
+      <a href="/tags/Linux">Linux</a>
+  
+      ,&nbsp;
+      <a href="/tags/Ansible">Ansible</a>
+  </p>
+</div>
+
+                        
+                            <div class="post">
   <a class="post-link" href="/post/python/hugo-ipynb/">
   <p class="post-meta left">Jan 1, 2019</p>
   <p class="post-meta right">Hugo plugins</p>
@@ -158,32 +254,6 @@ $ cd themes $ git clone https://github.com/azmelanar/hugo-theme-pixyll.git  пр
 
                         
                             <div class="post">
-  <a class="post-link" href="/post/devops/jenkins/">
-  <p class="post-meta left">Nov 20, 2017</p>
-  <p class="post-meta right"></p>
-  <div class="clearfix"></div>
-  <h3 class="h2 post-title">Jenkins </h3>
-  <p class="post-summary"><p><strong>Jenkins</strong> - инструмент автоматизации. Бесплатен.
-Groovy  в качестве встроенного языка сценариев.
-Большое число plugin. Большое сообщество.
-Расширяем, но требует Java VM для работы.</p></p>
-  </a>
-  
-  <p class="post-meta">Tags:&nbsp;
-  
-      
-      <a href="/tags/QA">QA</a>
-  
-      ,&nbsp;
-      <a href="/tags/Jenkins">Jenkins</a>
-  
-      ,&nbsp;
-      <a href="/tags/GITLAB">GITLAB</a>
-  </p>
-</div>
-
-                        
-                            <div class="post">
   <a class="post-link" href="/post/devops/gitlab/">
   <p class="post-meta left">Nov 20, 2017</p>
   <p class="post-meta right"></p>
@@ -234,59 +304,6 @@ Groovy  в качестве встроенного языка сценариев
 </div>
 
                         
-                            <div class="post">
-  <a class="post-link" href="/post/devops/markdown/">
-  <p class="post-meta left">Apr 16, 2017</p>
-  <p class="post-meta right">Разметака текста</p>
-  <div class="clearfix"></div>
-  <h3 class="h2 post-title">Markdown </h3>
-  <p class="post-summary"><p>Достаточно подробно <a href="https://learn.getgrav.org/content/media">https://learn.getgrav.org/content/media</a>
-описана так же шапка - это линки на папки и маршрутизация
-отличный
-редактор с двумя окнами под win free <a href="http://markdownpad.com/">http://markdownpad.com/</a></p></p>
-  </a>
-  
-  <p class="post-meta">Tags:&nbsp;
-  </p>
-</div>
-
-                        
-                            <div class="post">
-  <a class="post-link" href="/post/python/jasminepy/">
-  <p class="post-meta left">Apr 16, 2017</p>
-  <p class="post-meta right"></p>
-  <div class="clearfix"></div>
-  <h3 class="h2 post-title">Jasmine in Python </h3>
-  <p class="post-summary"><p>Jasmine — фреймворк для описания тестов на JavaScript, обладающий простым BDD-синтаксисом и широкими возможностями. Jasmine самодостаточен, тесты, написанные при помощи этого фреймворка можно запустить под Node без каких-либо дополнительных ухищрений.</p></p>
-  </a>
-  
-  <p class="post-meta">Tags:&nbsp;
-  
-      
-      <a href="/tags/jasmine">jasmine</a>
-  
-      ,&nbsp;
-      <a href="/tags/unit-test">unit-test</a>
-  </p>
-</div>
-
-                        
-                            <div class="post">
-  <a class="post-link" href="/post/python/getstart-selenium/">
-  <p class="post-meta left">Apr 15, 2017</p>
-  <p class="post-meta right"></p>
-  <div class="clearfix"></div>
-  <h3 class="h2 post-title">Get Start with Selenium </h3>
-  <p class="post-summary"> Selenium WebDrive first step in blog
-code on Python:
-def code(): m = 5 d = 6 if d &lt; m: print(&quot;Ok&quot;)  </p>
-  </a>
-  
-  <p class="post-meta">Tags:&nbsp;
-  </p>
-</div>
-
-                        
                 </div>
             </div>
             <div class="paginatin_area">
@@ -298,7 +315,7 @@ def code(): m = 5 d = 6 if d &lt; m: print(&quot;Ok&quot;)  </p>
   </div>
   <div class="right">
   
-  <span class="pagination-item disabled">Older</span>
+  <a class="pagination-item" href="/page/2/">Older</a>
   
   </div>
 </div>
