@@ -1,22 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Qa on Personal Site</title>
+    <title>Qa on All blogs</title>
     <link>/tags/qa/</link>
-    <description>Recent content in Qa on Personal Site</description>
+    <description>Recent content in Qa on All blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
+    <copyright>Yuri Vinogradov</copyright>
     <lastBuildDate>Mon, 20 Nov 2017 23:27:56 +0300</lastBuildDate>
     
 	<atom:link href="/tags/qa/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Jenkins</title>
-      <link>/post/devops/jenkins/</link>
+      <title>Selenium WebDriver</title>
+      <link>/2017/11/selenium-webdriver/</link>
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
-      <guid>/post/devops/jenkins/</guid>
+      <guid>/2017/11/selenium-webdriver/</guid>
+      <description>&lt;p&gt;Selenium WebDriver&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bash # pip install selenium&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;рекомендуется virtualenv. Python 3.4 содержит модуль pyvenv&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://selenium2.ru/docs.html&#34;&gt;Документация перевод&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.seleniumhq.org/docs/&#34;&gt;Оригинальная документация&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://selenium-python.readthedocs.io/&#34;&gt;Для Python&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Работа с Jenkins</title>
+      <link>/2017/11/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-jenkins/</link>
+      <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
+      
+      <guid>/2017/11/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-jenkins/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Jenkins&lt;/strong&gt; - инструмент автоматизации. Бесплатен.
 Groovy  в качестве встроенного языка сценариев.
 Большое число plugin. Большое сообщество.

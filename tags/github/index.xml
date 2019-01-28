@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Github on Personal Site</title>
+    <title>Github on All blogs</title>
     <link>/tags/github/</link>
-    <description>Recent content in Github on Personal Site</description>
+    <description>Recent content in Github on All blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
+    <copyright>Yuri Vinogradov</copyright>
     <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +14,10 @@
     
     <item>
       <title>Jupyter in Hugo</title>
-      <link>/post/python/hugo-ipynb/</link>
+      <link>/2019/01/jupyter-in-hugo/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/python/hugo-ipynb/</guid>
+      <guid>/2019/01/jupyter-in-hugo/</guid>
       <description>Добавляем возможность интеграции Jupyter файлов, как статических данных
 Попробовал следующий варинт:
 $ pip install hugo_jupyter  досталяется достаточно много модулей
@@ -25,16 +26,11 @@ $ cd root_of_hugo_project $ hugo_jupyter --init   Запускаем Jupyter not
     
     <item>
       <title>Hugo on GitHub</title>
-      <link>/post/golang/hugoongithub/</link>
-      <pubDate>Mon, 10 Dec 2018 22:47:58 +0300</pubDate>
+      <link>/2018/12/hugo-on-github/</link>
+      <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/golang/hugoongithub/</guid>
-      <description>Разнесение кода и статических страниц в двух репозиториях 1. Создаем репозиторий и клонируем его
-$ git clone https://github.com/vvuri/hugoblog.git   Ставим hugo Создаем новый сайт bash $ hugo new site hugoblog  Создаем первый пост bash $ cd vvuri $ hugo new post/start-new-blog.md  Правим контекст в /content/post/*.md
- Добаляем .gitignore
- Добавляем тему оформления
-$ cd themes $ git clone https://github.com/azmelanar/hugo-theme-pixyll.git  правим файл config.toml
- Смотрим локально, что получилось localhosyt:8000</description>
+      <guid>/2018/12/hugo-on-github/</guid>
+      <description>&lt;p&gt;Разнесение кода и статических страниц в двух репозиториях&lt;/p&gt;</description>
     </item>
     
   </channel>

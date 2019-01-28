@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Git on Personal Site</title>
+    <title>Git on All blogs</title>
     <link>/tags/git/</link>
-    <description>Recent content in Git on Personal Site</description>
+    <description>Recent content in Git on All blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
+    <copyright>Yuri Vinogradov</copyright>
     <lastBuildDate>Mon, 20 Nov 2017 23:27:56 +0300</lastBuildDate>
     
 	<atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>GIT</title>
-      <link>/post/devops/gitlab/</link>
+      <title>Работа с репозиторием</title>
+      <link>/2017/11/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%BC/</link>
       <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
       
-      <guid>/post/devops/gitlab/</guid>
+      <guid>/2017/11/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%BC/</guid>
       <description>&lt;h4 id=&#34;git-gitlab&#34;&gt;GIT GITLAB&lt;/h4&gt;
 
 &lt;ul&gt;

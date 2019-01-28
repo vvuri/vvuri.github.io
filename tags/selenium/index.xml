@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Selenium on All blogs</title>
+    <link>/tags/selenium/</link>
+    <description>Recent content in Selenium on All blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>Yuri Vinogradov</copyright>
+    <lastBuildDate>Mon, 20 Nov 2017 23:27:56 +0300</lastBuildDate>
+    
+	<atom:link href="/tags/selenium/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Selenium WebDriver</title>
+      <link>/2017/11/selenium-webdriver/</link>
+      <pubDate>Mon, 20 Nov 2017 23:27:56 +0300</pubDate>
+      
+      <guid>/2017/11/selenium-webdriver/</guid>
+      <description>&lt;p&gt;Selenium WebDriver&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bash # pip install selenium&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;рекомендуется virtualenv. Python 3.4 содержит модуль pyvenv&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://selenium2.ru/docs.html&#34;&gt;Документация перевод&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.seleniumhq.org/docs/&#34;&gt;Оригинальная документация&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://selenium-python.readthedocs.io/&#34;&gt;Для Python&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

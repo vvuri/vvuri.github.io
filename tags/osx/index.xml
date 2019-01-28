@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Osx on Personal Site</title>
+    <title>Osx on All blogs</title>
     <link>/tags/osx/</link>
-    <description>Recent content in Osx on Personal Site</description>
+    <description>Recent content in Osx on All blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
+    <copyright>Yuri Vinogradov</copyright>
     <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/osx/index.xml" rel="self" type="application/rss+xml" />
@@ -13,12 +14,13 @@
     
     <item>
       <title>Горячие клавиши Mac OS X</title>
-      <link>/post/devops/osx-key/</link>
+      <link>/2019/01/%D0%B3%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B5-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D0%B8-mac-os-x/</link>
       <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/devops/osx-key/</guid>
+      <guid>/2019/01/%D0%B3%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B5-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D0%B8-mac-os-x/</guid>
       <description>Клавиатура со своими особенностями и обозначениями: - Command (или Cmd) ⌘ - Shift ⇧ - Option (или Alt) ⌥ - Control (или Ctrl) ⌃ - Caps Lock ⇪ - Fn
-Клавиатура [Fn-ноут] [Control-Ctrl] [Option-Alt] [Command-Cmd] [---] [Command-Cmd] [Option-Alt] Windows [Ctrl] [Win] [Alt] [---] [Alt] [Fn] [Ctrl]  Работа с системой - комбинации клавиш - Открыть Launchpad со списком установленных программ надо нажать F4 Открыть Finder (аналог проводника) надо несколько раз нажать Alt + Tab для переключения между окнами Скриншот Command + Shift +3 - Скриншот области Command + Shift + 4 и выделить область - Выделить все Command + A Скопировать Command + С Вырезать Command + X Вставить Command + V - Переходы Command + стрелка вверх для перехода в начало, и Command + стрелка вниз — в конец Переименовать файл F2/либо Return Отменить действие Command + Z Запустить поиск Command + F Закрыть активное окно Command + W - Новая вкладка Command + T Между приложениями Command + Tab и перемещайтесь между стрелками влево-вправо Параметры приложения Command + &amp;lt; Поиск помощи Command + Shift + ?</description>
+Раскладка клавиш клавиатур: Macintosh [Fn-ноут] [Control-Ctrl] [Option-Alt] [Command-Cmd] [---] [Command-Cmd] [Option-Alt] Windows [Ctrl] [Win] [Alt] [---] [Alt] [Fn] [Ctrl]  Работа с системой - комбинации клавиш
+ Открыть Launchpad со списком установленных программ надо нажать F4 Открыть Finder (аналог проводника) надо несколько раз нажать Alt + Tab для переключения между окнами Скриншот Command + Shift +3 Скриншот области Command + Shift + 4 и выделить область</description>
     </item>
     
   </channel>

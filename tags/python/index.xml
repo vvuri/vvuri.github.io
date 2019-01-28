@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on Personal Site</title>
+    <title>Python on All blogs</title>
     <link>/tags/python/</link>
-    <description>Recent content in Python on Personal Site</description>
+    <description>Recent content in Python on All blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
+    <copyright>Yuri Vinogradov</copyright>
     <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +14,10 @@
     
     <item>
       <title>Jupyter in Hugo</title>
-      <link>/post/python/hugo-ipynb/</link>
+      <link>/2019/01/jupyter-in-hugo/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/python/hugo-ipynb/</guid>
+      <guid>/2019/01/jupyter-in-hugo/</guid>
       <description>Добавляем возможность интеграции Jupyter файлов, как статических данных
 Попробовал следующий варинт:
 $ pip install hugo_jupyter  досталяется достаточно много модулей
@@ -25,14 +26,11 @@ $ cd root_of_hugo_project $ hugo_jupyter --init   Запускаем Jupyter not
     
     <item>
       <title>VSCode</title>
-      <link>/post/devops/vscode/</link>
+      <link>/2018/12/vscode/</link>
       <pubDate>Thu, 13 Dec 2018 23:27:56 +0300</pubDate>
       
-      <guid>/post/devops/vscode/</guid>
-      <description>Работал я с различными IDE. На мой взгляд, лучшей для разработки была среда Delphi. Так 3-я вресия работала прекрасно на 8 Мбайтах. С трассировщиком отладки, с брекпоинтами, с компонентами и редактором форм.
-Eclips - тормознутый был с самого начала и бестолковый по окнам настройки.
-Notepad++ - шведский нож, работать можно с кучей форматов, но при этом не так до IDE разработки ой как далеко.
-Sublime - отличный блокнот - притом крос-платформенный и уже с кучей дополнительных модулей.</description>
+      <guid>/2018/12/vscode/</guid>
+      <description>&lt;p&gt;Работал я с различными IDE. На мой взгляд, лучшей для разработки была среда &lt;strong&gt;Delphi&lt;/strong&gt;. Так 3-я вресия работала прекрасно на 8 Мбайтах. С трассировщиком отладки, с брекпоинтами, с компонентами и редактором форм.&lt;/p&gt;</description>
     </item>
     
   </channel>

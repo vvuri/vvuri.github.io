@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <meta charset="utf-8"><script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": ""
+        },
+        "articleSection" : "post",
+        "name" : "Первые шаги с Ansible",
+        "headline" : "Первые шаги с Ansible",
+        "description" : "Education Python, Golang, Machine Learning and Robotics. Work in QA.",
+        "inLanguage" : "en",
+        "author" : "vvuri",
+        "creator" : "vvuri",
+        "publisher": "vvuri",
+        "accountablePerson" : "vvuri",
+        "copyrightHolder" : "vvuri",
+        "copyrightYear" : "2019",
+        "datePublished": "2019-01-23 00:00:00 +0000 UTC",
+        "dateModified" : "2019-01-23 00:00:00 +0000 UTC",
+        "url" : "/2019/01/%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B5-%D1%88%D0%B0%D0%B3%D0%B8-%D1%81-ansible/",
+        "wordCount" : "594",
+        "keywords" : [ "DevOps","Linux","Ansible","Blog" ]
+    }
+</script>
+<title>
+    Первые шаги с Ansible &ndash; All blogs
+</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="/favicon.ico">
+
+
+
+<meta itemprop="name" content="Первые шаги с Ansible">
+<meta itemprop="description" content="Ansible — система управления конфигурациями, написанная на Python.
+Используется для автоматизации настройки и развертывания программного обеспечения, управления Linux-узлами.">
+
+
+<meta itemprop="datePublished" content="2019-01-23T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-01-23T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="594">
+
+
+
+<meta itemprop="keywords" content="DevOps,Linux,Ansible," />
+
+<meta property="og:title" content="Первые шаги с Ansible" />
+<meta property="og:description" content="Ansible — система управления конфигурациями, написанная на Python.
+Используется для автоматизации настройки и развертывания программного обеспечения, управления Linux-узлами." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2019/01/%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B5-%D1%88%D0%B0%D0%B3%D0%B8-%D1%81-ansible/" /><meta property="article:published_time" content="2019-01-23T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-01-23T00:00:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/2019/01/%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B5-%D1%88%D0%B0%D0%B3%D0%B8-%D1%81-ansible/feature-ansible.png"/>
+<meta name="twitter:title" content="Первые шаги с Ansible"/>
+<meta name="twitter:description" content="Ansible — система управления конфигурациями, написанная на Python.
+Используется для автоматизации настройки и развертывания программного обеспечения, управления Linux-узлами."/>
+
+
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="All blogs"/>
+
+
+
+
+<link rel="stylesheet" href="/css/vendor.min.9183da55bc4e5dd8cd3348c378b9206d799fe65419e86acc5d600fe331baa902.css" integrity="sha256-kYPaVbxOXdjNM0jDeLkgbXmf5lQZ6GrMXWAP4zG6qQI=">
+<body><nav class="navbar navbar-light navbar-expand-lg bg-white border-bottom shadow-sm">
+        
+    <div class="container">
+        <a class="navbar-brand text-primary" href="/">All blogs</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav mr-auto">
+                
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="/about/">About</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">DevOps</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown1">
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/debian/">Debian</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2017/04/markdown/">Markdown</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D0%B3%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B5-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D0%B8-mac-os-x/">Горячие клавиши Mac OS X</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B5-%D1%88%D0%B0%D0%B3%D0%B8-%D1%81-ansible/">Первые шаги с Ansible</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%BC/">Работа с репозиторием</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown2" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Golang</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown2">
+                            
+                                <a class="dropdown-item text-primary" href="/2018/12/hugo-on-github/">Hugo on GitHub</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown3" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">QA testing</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown3">
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/selenium-webdriver/">Selenium WebDriver</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-jenkins/">Работа с Jenkins</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+            </ul>
+
+            
+        </div>
+    </div>
+</nav>
+<main role="main">
+
+    <div class="container mt-3 mb-3">
+
+
+<div class="card">
+
+    <div class="card-body">
+        <h1 class="card-title"><a href="/2019/01/%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B5-%D1%88%D0%B0%D0%B3%D0%B8-%D1%81-ansible/">Первые шаги с Ansible</a></h1>
+        <h6 class="card-subtitle mb-2 text-muted">
+            23.01.2019 - 
+            vvuri -
+            Reading time ~3 Minutes
+        </h6>
+
+        <p class="card-text"><p><strong>Ansible</strong> — система управления конфигурациями, написанная на Python.
+Используется для автоматизации настройки и развертывания программного обеспечения, управления Linux-узлами.</p>
+
+<h4 id="install">Install</h4>
+
+<pre><code class="language-bash">$ sudo apt-get install python-pip python-yaml python-jinja2 python-paramiko -y
+$ sudo pip install ansible
+	
+$ python --version
+	Python 2.7.3
+$ ansible --version
+	ansible 2.1.1.0
+</code></pre>
+
+<p>Отработка скрипта пишет в:</p>
+
+<pre><code>$ sudo less -f /var/log/syslog	
+</code></pre>
+
+<p>Прямой вызов команд:</p>
+
+<pre><code class="language-bash">$ ansible localhost -m command -a &quot;python --version&quot;
+$ ansible localhost -m shell -a &quot;ps -axf | grep firefox&quot;
+$ ansible localhost -m shell -a &quot;ps -eo pcpu,user,args | sort -r -k1 | head -n5&quot;
+$ ansible host-file-with-ip -m ping
+</code></pre>
+
+<p>Документация:</p>
+
+<pre><code class="language-bash">$ ansible-doc service  
+</code></pre>
+
+<p>Готовые решение <a href="https://galaxy.ansible.com">на galaxy</a></p>
+
+<p>Playbook - каждый файл доржен содержать:
+- множество hosts
+- список tasks</p>
+
+<p><a href="https://ipfs.io/ipfs/QmTJaLdhUW6jTdXGFoqv7wZe5KguBi5F2u4ihBdrUMVPhw">пример из книги</a></p>
+
+<pre><code class="language-yaml">name: Configure webserver with nginx
+hosts: webservers
+sudo: True
+tasks:
+    - name: install nginx
+        apt: name=nginx update_cache=yes
+    - name: copy nginx config file
+        copy: src=files/nginx.conf dest=/etc/nginx/sites-available/default
+    - name: enable configuration
+        file: &gt;
+            dest=/etc/nginx/sites-enabled/default
+            src=/etc/nginx/sites-available/default
+            state=link
+    - name: copy index.html
+        template: src=templates/index.html.j2
+                dest=/usr/share/nginx/html/index.html mode=0644
+    - name: restart nginx
+        service: name=nginx state=restarted
+</code></pre>
+
+<p>Разбор:</p>
+
+<pre><code>name - комментраий что будет сделано далее, будет напечатано при выполнении
+sudo - выполнять ли по рутом
+vars - список переменных
+tasks - конкретные выполняемые операции - выше их 5:
+    name - рекомендуемый для заполнения комментарий, а так же метка для --start-at-task &lt;task name&gt;
+    Каждая задача содержит: имя модюля - apt например, и аргумент name=nginx update_cache=yes
+    старый вариант синтаксиса:
+        - name: install nginx
+            action: apt name=nginx update_cache=yes
+
+    apt      - Installs or removes packages using the apt package manager.
+    copy     - Copies a file from local machine to the hosts.
+    file     - Sets the attribute of a file, symlink, or directory.
+    service  - Starts, stops, or restarts a service	  
+    template - Generates a file from a template and copies it to the hosts.
+
+    # ansible-playbook -c xxx -i xxx 
+    -i host -по умолчанию хосты лежат в /etc/ansible/hosts
+</code></pre>
+
+<p><a href="http://docs.ansible.com/ansible/modules_by_category.html">Документация по всем модулям</a></p>
+
+<pre><code class="language-bash">$ ansible-doc -l | grep yum
+$ ansible-doc yum_repository
+</code></pre>
+
+<p>Консоль</p>
+
+<pre><code class="language-bash">root@all (0)[f:5]$ 
+   $ ansible-console
+</code></pre>
+
+<h4 id="пример-шаг-за-шагом">Пример шаг за шагом:</h4>
+
+<blockquote>
+<pre><code> site.yml – starting point of our ansible playbook 
+ # - name: install and configure webservers 
+ # hosts: webservers ```
+ # remote_user: ec2-user
+ # sudo: yes
+ # roles:
+ #    - webservers
+</code></pre>
+
+<p>hosts – carrying hosts information</p>
+
+<pre><code> # [webservers]
+ # 10.0.0.156
+</code></pre>
+
+<p>roles/ - defining what each type of server has to perform
+webservers/
+&gt; tasks/ - tasks performed on webservers
+&gt;&gt; main.yml</p>
+
+<pre><code>  # This task installs and enables apache on webservers
+  # - name: ensure apache is installed
+  #   yum: pkg=httpd state=latest
+  # - name: ensure apache is running
+  #   service: name=httpd state=running enabled=yes
+  # - name: copy files to document root
+  #   copy: src=cloud.png dest=/var/www/html/cloud.png
+  # - name: copy application code to document root
+  #   template: src=index.html.j2 dest=/var/www/html/index.html
+  #   notify: restart apache			                     
+</code></pre>
+
+<p>handlers/ - running tasks under particular events
+&gt; main.yml</p>
+
+<pre><code>  # # This task installs and enables apache on webservers
+  # - name: ensure apache is installed
+  #   yum: pkg=httpd state=latest
+  # - name: ensure apache is running
+  #   service: name=httpd state=running enabled=yes
+  # - name: copy files to document root
+  #   copy: src=cloud.png dest=/var/www/html/cloud.png
+  # - name: copy application code to document root
+  #   template: src=index.html.j2 dest=/var/www/html/index.html
+  #    notify: restart apache			                 
+</code></pre>
+
+<p>templates/ - configuration files which can reference variables
+&gt; index.html.j2</p>
+
+<pre><code>  # &lt;head&gt;
+  #     &lt;title&gt;CloudAcademy Ansible Demo&lt;/title&gt;
+  # &lt;/head&gt;
+  # &lt;body&gt;
+  #     &lt;h1&gt;
+  #         Thank you for reading this post. 
+  #         My IP Address is {{ ansible_eth0.ipv4.address }}
+  #     &lt;/h1&gt;
+  #     &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+  #     &lt;p&gt;
+  #         &lt;img src=&quot;cloud.png&quot; alt=&quot;CloudAcademy Logo&quot;/&gt;
+  #     &lt;/p&gt;
+  # &lt;/body&gt;
+  # &lt;/html&gt;
+</code></pre>
+
+<p>files/ - files to be copied to webservers
+&gt; cloud.png</p>
+
+<pre><code>&gt;&gt;&gt; # image put on server
+</code></pre>
+</blockquote>
+
+<pre><code># ansible-playbook site.yml -i hosts  
+</code></pre></p>
+
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">
+            
+                
+                    
+                        <a href="/categories/#linux" class="badge badge-primary"><span>linux</span></a>
+                    
+                
+                
+                    
+                        <a href="/tags/#devops" class="badge badge-secondary"><span>devops</span></a>
+                    
+                        <a href="/tags/#linux" class="badge badge-secondary"><span>linux</span></a>
+                    
+                        <a href="/tags/#ansible" class="badge badge-secondary"><span>ansible</span></a>
+                    
+                
+            
+        </small>
+    </div>
+</div>
+</div>
+
+
+        </main><footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md">
+                <h5>All blogs</h5>
+                &copy; 2019 vvuri                
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>Site</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="/categories/">Categories</a></li>
+                    <li><a class="text-muted" href="/tags/">Tags</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/js/vendor.min.3e5871eaa50b3aed8dc727d7e11c94314c0672556c7b4f2bd0dbf8dd0c00051f.js"></script>
+
+
+</body>
+</html>

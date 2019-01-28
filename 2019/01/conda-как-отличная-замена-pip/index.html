@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <meta charset="utf-8"><script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": ""
+        },
+        "articleSection" : "post",
+        "name" : "Conda как отличная замена Pip",
+        "headline" : "Conda как отличная замена Pip",
+        "description" : "Education Python, Golang, Machine Learning and Robotics. Work in QA.",
+        "inLanguage" : "en",
+        "author" : "vvuri",
+        "creator" : "vvuri",
+        "publisher": "vvuri",
+        "accountablePerson" : "vvuri",
+        "copyrightHolder" : "vvuri",
+        "copyrightYear" : "2019",
+        "datePublished": "2019-01-23 00:00:00 +0000 UTC",
+        "dateModified" : "2019-01-23 00:00:00 +0000 UTC",
+        "url" : "/2019/01/conda-%D0%BA%D0%B0%D0%BA-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%BD%D0%B0%D1%8F-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-pip/",
+        "wordCount" : "365",
+        "keywords" : [ "DevOps","ML","Conda","Blog" ]
+    }
+</script>
+<title>
+    Conda как отличная замена Pip &ndash; All blogs
+</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="/favicon.ico">
+
+
+
+<meta itemprop="name" content="Conda как отличная замена Pip">
+<meta itemprop="description" content="Conda документация
+Pip - стандартный менеджер пакетов питона, позволяет устанавливать бинарные wheel сборки пакетов. Если их нет (ни в самом Pip, ни где-то еще), Pip компилирует пакеты локально. При этом могут возникнуть проблемы при сложных зависимостях, когда требуются сторонние не питон библиотеки. В этом случае удобно использовать Conda.
+Команды Pip: - pip search package_name - поиск пакета через pip - pip install package_name - установка пакета через pip
+Conda - менеджер пакетов питона, позволяет устанавливать уже скомпилированные пакеты (может работать и в режиме компиляции пакетов перед установкой).">
+
+
+<meta itemprop="datePublished" content="2019-01-23T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-01-23T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="365">
+
+
+
+<meta itemprop="keywords" content="DevOps,ML,Conda," />
+
+<meta property="og:title" content="Conda как отличная замена Pip" />
+<meta property="og:description" content="Conda документация
+Pip - стандартный менеджер пакетов питона, позволяет устанавливать бинарные wheel сборки пакетов. Если их нет (ни в самом Pip, ни где-то еще), Pip компилирует пакеты локально. При этом могут возникнуть проблемы при сложных зависимостях, когда требуются сторонние не питон библиотеки. В этом случае удобно использовать Conda.
+Команды Pip: - pip search package_name - поиск пакета через pip - pip install package_name - установка пакета через pip
+Conda - менеджер пакетов питона, позволяет устанавливать уже скомпилированные пакеты (может работать и в режиме компиляции пакетов перед установкой)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2019/01/conda-%D0%BA%D0%B0%D0%BA-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%BD%D0%B0%D1%8F-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-pip/" /><meta property="article:published_time" content="2019-01-23T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-01-23T00:00:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Conda как отличная замена Pip"/>
+<meta name="twitter:description" content="Conda документация
+Pip - стандартный менеджер пакетов питона, позволяет устанавливать бинарные wheel сборки пакетов. Если их нет (ни в самом Pip, ни где-то еще), Pip компилирует пакеты локально. При этом могут возникнуть проблемы при сложных зависимостях, когда требуются сторонние не питон библиотеки. В этом случае удобно использовать Conda.
+Команды Pip: - pip search package_name - поиск пакета через pip - pip install package_name - установка пакета через pip
+Conda - менеджер пакетов питона, позволяет устанавливать уже скомпилированные пакеты (может работать и в режиме компиляции пакетов перед установкой)."/>
+
+
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="All blogs"/>
+
+
+
+
+<link rel="stylesheet" href="/css/vendor.min.9183da55bc4e5dd8cd3348c378b9206d799fe65419e86acc5d600fe331baa902.css" integrity="sha256-kYPaVbxOXdjNM0jDeLkgbXmf5lQZ6GrMXWAP4zG6qQI=">
+<body><nav class="navbar navbar-light navbar-expand-lg bg-white border-bottom shadow-sm">
+        
+    <div class="container">
+        <a class="navbar-brand text-primary" href="/">All blogs</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav mr-auto">
+                
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="/about/">About</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">DevOps</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown1">
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/debian/">Debian</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2017/04/markdown/">Markdown</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D0%B3%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B5-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D0%B8-mac-os-x/">Горячие клавиши Mac OS X</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B5-%D1%88%D0%B0%D0%B3%D0%B8-%D1%81-ansible/">Первые шаги с Ansible</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%BC/">Работа с репозиторием</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown2" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Golang</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown2">
+                            
+                                <a class="dropdown-item text-primary" href="/2018/12/hugo-on-github/">Hugo on GitHub</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown3" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">QA testing</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown3">
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/selenium-webdriver/">Selenium WebDriver</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-jenkins/">Работа с Jenkins</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+            </ul>
+
+            
+        </div>
+    </div>
+</nav>
+<main role="main">
+
+    <div class="container mt-3 mb-3">
+
+
+<div class="card">
+
+    <div class="card-body">
+        <h1 class="card-title"><a href="/2019/01/conda-%D0%BA%D0%B0%D0%BA-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%BD%D0%B0%D1%8F-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-pip/">Conda как отличная замена Pip</a></h1>
+        <h6 class="card-subtitle mb-2 text-muted">
+            23.01.2019 - 
+            vvuri -
+            Reading time ~2 Minutes
+        </h6>
+
+        <p class="card-text"><p><a href="http://conda.pydata.org/docs/">Conda документация</a></p>
+
+<p><strong>Pip</strong> - стандартный менеджер пакетов питона, позволяет устанавливать бинарные wheel сборки пакетов. Если их нет (ни в самом Pip, ни где-то еще), Pip компилирует пакеты локально. При этом могут возникнуть проблемы при сложных зависимостях, когда требуются сторонние не питон библиотеки. В этом случае удобно использовать Conda.</p>
+
+<p>Команды Pip:
+- pip search package_name - поиск пакета через pip
+- pip install package_name - установка пакета через pip</p>
+
+<p><strong>Conda</strong> - менеджер пакетов питона, позволяет устанавливать уже скомпилированные пакеты (может работать и в режиме компиляции пакетов перед установкой). Также Conda - менеджер окружений системы, позволяет создавать окружения с разными версиями чего угодно (библиотеки C, низкоуровневые библиотеки и т.д.).</p>
+
+<p><strong>Conda</strong> бывает в двух версиях:
+- <em>Анаконда</em> - более 150 предустановленных пакетов (около 3 Гб) + более 250 пакетов, готовых к установке командой conda install package_name
+- <em>Миниконда</em> - более 400 пакетов, готовых к установке командой conda install package_name</p>
+
+<p><a href="https://docs.continuum.io/anaconda/pkg-docs">Список пакетов</a></p>
+
+<p>Анаконда и Миниконда включают: conda, интерпретатор питона, pip</p>
+
+<p><strong>Команды Conda</strong>:
+&gt; conda search package_name  - поиск пакета через conda
+&gt; conda install package_name - установка пакета через conda
+&gt; conda install - установка всего стандартного набора пакетов - более 150, около 3 Гб
+&gt; conda list - список установленных пакетов
+&gt; conda update conda - обновление conda
+&gt; conda clean -t - удаление кеша - архивов .tar.bz2, которые могут занимать много места и не нужны</p>
+
+<blockquote>
+<p>conda install &ndash;name bunnies beautifulsoup4
+conda install name_lib=version
+conda install &ndash;channel <a href="https://conda.anaconda.org/pandas">https://conda.anaconda.org/pandas</a> bottleneck</p>
+</blockquote>
+
+<p><strong>Env</strong> - так же создает виртуальное окружение:</p>
+
+<pre><code class="language-bash">$ conda env --help
+create a new environment named /envs/snowflakes with the program Biopython.
+$ conda create --name snowflakes biopython
+$ source activate snowflakes
+$ source deactivate
+Создание второго окуржения с отличной версией питона:
+$ conda create --name bunnies python=3 astroid babel
+List env:
+$ conda info --envs
+Active env by *:
+$ conda info --envs
+Remove:
+$ conda remove --name flowers --all
+Дополнительные возможности: http://conda.pydata.org/docs/using/envs.html
+</code></pre>
+
+<p><strong>Install</strong>:
+1. <a href="http://conda.pydata.org/miniconda.html">Download miniconda</a>
+2. <code>$ bash Miniconda3-latest-Linux-x86_64.sh</code>
+3. <code>$ conda update conda</code>
+4. Если основной у нас 2.7 мы ставим conda 2.7 а потом будем указывать
+5. <code>$ conda create --name snakes python=3</code></p>
+
+<p>Для работы с <strong>ML</strong> ставим еще Jupyter и библиотеке:
+- <code>$ conda install Jupyter</code>
+- <code>$ conda install numpy pandas matplotlib scikit-learn</code></p>
+</p>
+
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">
+            
+                
+                    
+                        <a href="/categories/#devops" class="badge badge-primary"><span>devops</span></a>
+                    
+                
+                
+                    
+                        <a href="/tags/#devops" class="badge badge-secondary"><span>devops</span></a>
+                    
+                        <a href="/tags/#ml" class="badge badge-secondary"><span>ml</span></a>
+                    
+                        <a href="/tags/#conda" class="badge badge-secondary"><span>conda</span></a>
+                    
+                
+            
+        </small>
+    </div>
+</div>
+</div>
+
+
+        </main><footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md">
+                <h5>All blogs</h5>
+                &copy; 2019 vvuri                
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>Site</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="/categories/">Categories</a></li>
+                    <li><a class="text-muted" href="/tags/">Tags</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/js/vendor.min.3e5871eaa50b3aed8dc727d7e11c94314c0672556c7b4f2bd0dbf8dd0c00051f.js"></script>
+
+
+</body>
+</html>
