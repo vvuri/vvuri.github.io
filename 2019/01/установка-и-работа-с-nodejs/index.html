@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <meta charset="utf-8"><script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": ""
+        },
+        "articleSection" : "post",
+        "name" : "Установка и работа с NodeJS",
+        "headline" : "Установка и работа с NodeJS",
+        "description" : "Education Python, Golang, Machine Learning and Robotics. Work in QA.",
+        "inLanguage" : "en",
+        "author" : "vvuri",
+        "creator" : "vvuri",
+        "publisher": "vvuri",
+        "accountablePerson" : "vvuri",
+        "copyrightHolder" : "vvuri",
+        "copyrightYear" : "2019",
+        "datePublished": "2019-01-10 00:00:00 +0000 UTC",
+        "dateModified" : "2019-01-10 00:00:00 +0000 UTC",
+        "url" : "/2019/01/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-nodejs/",
+        "wordCount" : "464",
+        "keywords" : [ "JavaScript","NodeJS","Blog" ]
+    }
+</script>
+<title>
+    Установка и работа с NodeJS &ndash; All blogs
+</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="/favicon.ico">
+
+
+
+<meta itemprop="name" content="Установка и работа с NodeJS">
+<meta itemprop="description" content="Пакетные менеджеры
+
+
+bower - древний
+npm - из nodejs
+yarn - конкурент npm но внутри он же
+">
+
+
+<meta itemprop="datePublished" content="2019-01-10T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-01-10T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="464">
+
+
+
+<meta itemprop="keywords" content="JavaScript,NodeJS," />
+
+<meta property="og:title" content="Установка и работа с NodeJS" />
+<meta property="og:description" content="Пакетные менеджеры
+
+
+bower - древний
+npm - из nodejs
+yarn - конкурент npm но внутри он же
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2019/01/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-nodejs/" /><meta property="article:published_time" content="2019-01-10T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-01-10T00:00:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Установка и работа с NodeJS"/>
+<meta name="twitter:description" content="Пакетные менеджеры
+
+
+bower - древний
+npm - из nodejs
+yarn - конкурент npm но внутри он же
+"/>
+
+
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="All blogs"/>
+
+
+
+
+<link rel="stylesheet" href="/css/vendor.min.9183da55bc4e5dd8cd3348c378b9206d799fe65419e86acc5d600fe331baa902.css" integrity="sha256-kYPaVbxOXdjNM0jDeLkgbXmf5lQZ6GrMXWAP4zG6qQI=">
+<body><nav class="navbar navbar-light navbar-expand-lg bg-white border-bottom shadow-sm">
+        
+    <div class="container">
+        <a class="navbar-brand text-primary" href="/">All blogs</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav mr-auto">
+                
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="/about/">About</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">DevOps</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown1">
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/debian/">Debian</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2017/04/markdown-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B0/">Markdown разметка</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D0%B3%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B5-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D0%B8-os-x/">Горячие клавиши OS X</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81-grafana/">Начало работы с Grafana</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81-influxdb/">Начало работы с InfluxDB</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B5-%D1%88%D0%B0%D0%B3%D0%B8-%D1%81-ansible/">Первые шаги с Ansible</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%BC/">Работа с репозиторием</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown2" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Golang</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown2">
+                            
+                                <a class="dropdown-item text-primary" href="/2018/12/hugo-on-github/">Hugo on GitHub</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown3" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">JavaScript</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown3">
+                            
+                                <a class="dropdown-item text-primary" href="/2018/12/%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE-%D0%BE%D0%B1-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%85-vue.js/">Кратко об основах Vue.js</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-nodejs/">Установка и работа с NodeJS</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown4" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">QA testing</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown4">
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/selenium-webdriver/">Selenium WebDriver</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE-%D0%BE%D0%B1-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%85-sip-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0/">Кратко об основах SIP-протокола</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-jenkins/">Работа с Jenkins</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+            </ul>
+
+            
+        </div>
+    </div>
+</nav>
+<main role="main">
+
+    <div class="container mt-3 mb-3">
+
+
+<div class="card">
+        <img class="card-img-top" src="/2019/01/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-nodejs/motivation-nodejs_hu5b803ac9fd30f9e2f7b4a76009ddf5fa_94895_800x0_resize_q75_box.jpg" alt="Установка и работа с NodeJS" title="Установка и работа с NodeJS">
+    
+
+    <div class="card-body">
+        <h1 class="card-title"><a href="/2019/01/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-nodejs/">Установка и работа с NodeJS</a></h1>
+        <h6 class="card-subtitle mb-2 text-muted">
+            10.01.2019 - 
+            vvuri -
+            Reading time ~3 Minutes
+        </h6>
+
+        <p class="card-text"><h4 id="пакетные-менеджеры">Пакетные менеджеры</h4>
+
+<ul>
+<li><strong>bower</strong> - древний</li>
+<li><strong>npm</strong> - из nodejs</li>
+<li><strong>yarn</strong> - конкурент npm но внутри он же</li>
+</ul>
+
+<h3 id="npm-установка">npm - установка</h3>
+
+<ul>
+<li>Install:
+<code>
+$ curl https://npmjs.org/install.sh | sh
+</code></li>
+<li>Поиск пакетов
+<code>
+$ npm search hook.io
+</code></li>
+<li>Информация о пакете
+<code>
+$ npm view hook.io
+</code></li>
+<li>Установка пакета
+<code>
+$ npm install http-server      локально - виден только в папке установки
+$ npm install http-server -g   глобально			
+</code></li>
+<li>Удаление пакета
+<code>
+$ npm uninstall http-server
+</code>				</li>
+<li>Создание пакета
+<code>
+$ mkdir mypackage/
+$ cd mypackage/
+$ npm init    
+</code></li>
+</ul>
+
+<h4 id="работа-с-пакетами-для-frontend">Работа с пакетами для FrontEnd</h4>
+
+<p><a href="https://habrahabr.ru/company/mailru/blog/340922/">статья на habr</a>
+1. заходим в папку с проектом		
+2. <code>$ npm init</code>  создаст файл package.json
+3. <code>$ npm install moment --save</code>  установка пакета - аналог скачивания js файлика
+4. <code>&lt;script src=&quot;node_modules/moment/min/moment.min.js&quot;&gt;&lt;/script&gt;</code>
+5. <code>$ npm install webpack --save-dev</code>  ставим бандлер-упаковщик всех файлов в один пакет
+6. у нас есть предположим файл index.js</p>
+
+<pre><code>   var moment = require('moment');
+   console.log(&quot;Hello from JavaScript!&quot;);
+   console.log(moment().startOf('day').fromNow());
+</code></pre>
+
+<ol>
+<li><code>$ ./node_modules/.bin/webpack index.js bundle.js</code>	
+мы зависимость requeire превратим в правильный путь и создадим один выходной файл</li>
+<li><code>&lt;script src=&quot;bundle.js&quot;&gt;&lt;/script&gt;</code>  теперь вместо раннее описанного</li>
+<li><code>$ ./node_modules/.bin/webpack</code> чтобы упростить работу при каждой сборке
+	где  <code>webpack.config.js</code>
+	<code>module.exports = {entry: './index.js', output: {filename: 'bundle.js'}};</code></li>
+<li>Транспилирование кода - babel, TypeScript, CoffeeScript</li>
+<li><code>$ npm install babel-core babel-preset-env babel-loader --save-dev</code></li>
+<li>webpack.config.js
+<code>
+	module.exports = {
+		entry: './index.js', 
+		output: {filename: 'bundle.js'}, 
+		module: {rules: 
+			[{test: /\.js$/, 
+			exclude: /node_modules/, 
+			use: { loader: 'babel-loader', 
+				options: {presets: ['env']}}}]}};  	
+</code>	</li>
+<li>теперь можно писать на ECMA2015 - index.js
+	<code>
+	import moment from 'moment';
+	console.log(&quot;Hello from JavaScript!&quot;);
+	console.log(moment().startOf('day').fromNow());
+	var name = &quot;Bob&quot;, time = &quot;today&quot;;
+	console.log(`Hello ${name}, how are you ${time}?`);
+	</code></li>
+<li><code>$ ./node_modules/.bin/webpack</code>	 получаем рабочую версию</li>
+<li><code>$ npm install webpack-dev-server --save-dev</code> установка вебсервера для разработки</li>
+<li>ранее был <strong>Grunt</strong>, но вскоре его место занял <strong>Gulp</strong>
+	<em>package.json</em>:
+	<code>
+	{
+		&quot;name&quot;: &quot;modern-javascript-example&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;description&quot;: &quot;&quot;,  
+		&quot;main&quot;: &quot;index.js&quot;,
+		&quot;scripts&quot;: {
+		&quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;,
+		&quot;build&quot;: &quot;webpack --progress -p&quot;,
+		&quot;watch&quot;: &quot;webpack --progress --watch&quot;,
+		&quot;server&quot;: &quot;webpack-dev-server --open&quot;
+		},
+		&quot;author&quot;: &quot;&quot;,  &quot;license&quot;: &quot;ISC&quot;,  
+		&quot;dependencies&quot;: {&quot;moment&quot;: &quot;^2.19.1&quot;},
+		&quot;devDependencies&quot;: {&quot;babel-core&quot;: &quot;^6.26.0&quot;, &quot;babel-loader&quot;: &quot;^7.1.2&quot;, &quot;babel-preset-env&quot;: &quot;^1.6.1&quot;, &quot;webpack&quot;: &quot;^3.7.1&quot;}
+	}
+	</code></li>
+<li><code>$ npm run build</code>  сборка запускает webpack (с webpack.config.js), с опцией -p для минимизации кода.</li>
+<li><code>$ npm run watch</code>  перезапуск webpack при каждом изменении JavaScript-файла</li>
+<li><code>$ npm run server</code>  запускаем сервер</li>
+</ol>
+
+<p>описана <a href="https://webpack.js.org/guides/development/">куча автоматизации</a> по sass и тд</p>
+
+<h4 id="целый-ряд-пакетов-для-тестироваия">Целый ряд пакетов для тестироваия</h4>
+
+<pre><code>npm install -g karma
+npm install -g jasmine
+npm install -g jasmine-core
+npm install -g karma-cli
+npm install -g karma-jasmine
+npm install -g phantomjs-prebuilt
+npm install -g karma-phantomjs-launcher
+</code></pre>
+
+<h4 id="ставим-nodejs-на-linux">Ставим NodeJS на Linux</h4>
+
+<ul>
+<li><a href="https://nodejs.org/en/download/">качаем версию для linux</a></li>
+<li>распаковываем</li>
+<li><code>mv node-v6.9.4-linux-x64/ nodejs</code></li>
+<li><code>export PATH=&quot;$HOME/soft/nodejs/bin:$PATH&quot;</code></li>
+<li><code>vi .profile</code>
+<code>
+export PATH=$HOME/soft/nodejs/bin
+</code></li>
+<li><code>node -v</code></li>
+</ul>
+
+<h4 id="алтернативный-вариант-возможно-как-добавление-к-прежнему">алтернативный вариант - возможно как добавление к прежнему</h4>
+
+<ul>
+<li><code>curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -</code></li>
+<li><code>sudo apt-get install -y nodejs</code></li>
+<li><code>sudo apt-get install -y build-essential</code></li>
+<li>переоткртыть терминал</li>
+<li><code>npm version</code>
+<code>
+npm: '5.6.0',
+ares: '1.10.1-DEV',
+cldr: '31.0.1',
+http_parser: '2.7.0',
+icu: '59.1',
+modules: '57',
+nghttp2: '1.25.0',
+node: '8.9.4',
+openssl: '1.0.2n',
+tz: '2017b',
+unicode: '9.0',
+uv: '1.15.0',
+v8: '6.1.534.50',
+zlib: '1.2.11'
+</code></li>
+</ul></p>
+
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">
+            
+                
+                    
+                        <a href="/categories/#code" class="badge badge-primary"><span>code</span></a>
+                    
+                
+                
+                    
+                        <a href="/tags/#javascript" class="badge badge-secondary"><span>javascript</span></a>
+                    
+                        <a href="/tags/#nodejs" class="badge badge-secondary"><span>nodejs</span></a>
+                    
+                
+            
+        </small>
+    </div>
+</div>
+</div>
+
+
+        </main><footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md">
+                <h5>All blogs</h5>
+                &copy; 2019 vvuri                
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>Site</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="/categories/">Categories</a></li>
+                    <li><a class="text-muted" href="/tags/">Tags</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/js/vendor.min.3e5871eaa50b3aed8dc727d7e11c94314c0672556c7b4f2bd0dbf8dd0c00051f.js"></script>
+
+
+</body>
+</html>

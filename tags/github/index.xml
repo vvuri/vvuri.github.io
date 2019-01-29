@@ -18,10 +18,7 @@
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/2019/01/jupyter-in-hugo/</guid>
-      <description>Добавляем возможность интеграции Jupyter файлов, как статических данных
-Попробовал следующий варинт:
-$ pip install hugo_jupyter  досталяется достаточно много модулей
-$ cd root_of_hugo_project $ hugo_jupyter --init   Запускаем Jupyter notebook Создаем новый файл название меняем на необходимое Edit - Edit Notebook Metadata Добавляем следующий заголовок  &amp;quot;front-matter&amp;quot;:{ &amp;quot;date&amp;quot;:&amp;quot;2019-01-03&amp;quot;, &amp;quot;subtitle&amp;quot;: &amp;quot;Add Jupyter print&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Jupyter Hugo&amp;quot; }, &amp;quot;hugo_jupyter&amp;quot;: { &amp;quot;render-to&amp;quot;: &amp;quot;/path/to/blog/content&amp;quot; }  сохраняем должен появится файл с расширением md  НО не выходит, не создается и что просходит пока не ясно</description>
+      <description>&lt;p&gt;Добавляем возможность интеграции Jupyter файлов, как статических данных&lt;/p&gt;</description>
     </item>
     
     <item>

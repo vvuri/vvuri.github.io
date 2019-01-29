@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network on All blogs</title>
+    <link>/tags/network/</link>
+    <description>Recent content in Network on All blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>Yuri Vinogradov</copyright>
+    <lastBuildDate>Thu, 10 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Кратко об основах SIP-протокола</title>
+      <link>/2019/01/%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE-%D0%BE%D0%B1-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%85-sip-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/01/%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE-%D0%BE%D0%B1-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%85-sip-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0/</guid>
+      <description>&lt;p&gt;SIP (Session Initiation Protocol)- протоколом обмена сигналами IP-телефонии, используемый для установки телефонных вызовов.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code on All blogs</title>
+    <link>/categories/code/</link>
+    <description>Recent content in Code on All blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>Yuri Vinogradov</copyright>
+    <lastBuildDate>Sun, 20 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Начало работы с Grafana</title>
+      <link>/2019/01/%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81-grafana/</link>
+      <pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/01/%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81-grafana/</guid>
+      <description>&lt;p&gt;Grafana -  это платформа для визуализации, мониторинга и анализа данных.
+- &lt;a href=&#34;https://grafana.com/&#34;&gt;основной сайт&lt;/a&gt;
+- &lt;a href=&#34;https://grafana.com/grafana/download&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Установка и работа с NodeJS</title>
+      <link>/2019/01/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-nodejs/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/01/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-nodejs/</guid>
+      <description>&lt;h4 id=&#34;пакетные-менеджеры&#34;&gt;Пакетные менеджеры&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;bower&lt;/strong&gt; - древний&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;npm&lt;/strong&gt; - из nodejs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;yarn&lt;/strong&gt; - конкурент npm но внутри он же&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Кратко об основах Vue.js</title>
+      <link>/2018/12/%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE-%D0%BE%D0%B1-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%85-vue.js/</link>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/12/%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE-%D0%BE%D0%B1-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%85-vue.js/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Основной сайт - &lt;code&gt;vuejs.org&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tproger.ru/video/vue-from-scratch/&#34;&gt;короткий вводный курс&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;достаточно подключить &lt;code&gt;vue.min.js&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

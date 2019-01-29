@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <meta charset="utf-8"><script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": ""
+        },
+        "articleSection" : "post",
+        "name" : "Начало работы с InfluxDB",
+        "headline" : "Начало работы с InfluxDB",
+        "description" : "Education Python, Golang, Machine Learning and Robotics. Work in QA.",
+        "inLanguage" : "en",
+        "author" : "vvuri",
+        "creator" : "vvuri",
+        "publisher": "vvuri",
+        "accountablePerson" : "vvuri",
+        "copyrightHolder" : "vvuri",
+        "copyrightYear" : "2019",
+        "datePublished": "2019-01-20 00:00:00 +0000 UTC",
+        "dateModified" : "2019-01-20 00:00:00 +0000 UTC",
+        "url" : "/2019/01/%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81-influxdb/",
+        "wordCount" : "332",
+        "keywords" : [ "InfluxDB","Grafana","Blog" ]
+    }
+</script>
+<title>
+    Начало работы с InfluxDB &ndash; All blogs
+</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="/favicon.ico">
+
+
+
+<meta itemprop="name" content="Начало работы с InfluxDB">
+<meta itemprop="description" content="InfluxData представляет собой набор приложений, написанных на языке Go:">
+
+
+<meta itemprop="datePublished" content="2019-01-20T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-01-20T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="332">
+
+
+
+<meta itemprop="keywords" content="InfluxDB,Grafana," />
+
+<meta property="og:title" content="Начало работы с InfluxDB" />
+<meta property="og:description" content="InfluxData представляет собой набор приложений, написанных на языке Go:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2019/01/%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81-influxdb/" /><meta property="article:published_time" content="2019-01-20T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-01-20T00:00:00&#43;00:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Начало работы с InfluxDB"/>
+<meta name="twitter:description" content="InfluxData представляет собой набор приложений, написанных на языке Go:"/>
+
+
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="All blogs"/>
+
+
+
+
+<link rel="stylesheet" href="/css/vendor.min.9183da55bc4e5dd8cd3348c378b9206d799fe65419e86acc5d600fe331baa902.css" integrity="sha256-kYPaVbxOXdjNM0jDeLkgbXmf5lQZ6GrMXWAP4zG6qQI=">
+<body><nav class="navbar navbar-light navbar-expand-lg bg-white border-bottom shadow-sm">
+        
+    <div class="container">
+        <a class="navbar-brand text-primary" href="/">All blogs</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav mr-auto">
+                
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="/about/">About</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">DevOps</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown1">
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/debian/">Debian</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2017/04/markdown-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B0/">Markdown разметка</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D0%B3%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B5-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D0%B8-os-x/">Горячие клавиши OS X</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81-grafana/">Начало работы с Grafana</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81-influxdb/">Начало работы с InfluxDB</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B5-%D1%88%D0%B0%D0%B3%D0%B8-%D1%81-ansible/">Первые шаги с Ansible</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%BC/">Работа с репозиторием</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown2" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Golang</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown2">
+                            
+                                <a class="dropdown-item text-primary" href="/2018/12/hugo-on-github/">Hugo on GitHub</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown3" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">JavaScript</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown3">
+                            
+                                <a class="dropdown-item text-primary" href="/2018/12/%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE-%D0%BE%D0%B1-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%85-vue.js/">Кратко об основах Vue.js</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-nodejs/">Установка и работа с NodeJS</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="dropdown4" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">QA testing</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown4">
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/selenium-webdriver/">Selenium WebDriver</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2019/01/%D0%BA%D1%80%D0%B0%D1%82%D0%BA%D0%BE-%D0%BE%D0%B1-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%85-sip-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0/">Кратко об основах SIP-протокола</a>
+                            
+                                <a class="dropdown-item text-primary" href="/2017/11/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-jenkins/">Работа с Jenkins</a>
+                            
+                            </div>
+                        </li>
+                    
+                
+            </ul>
+
+            
+        </div>
+    </div>
+</nav>
+<main role="main">
+
+    <div class="container mt-3 mb-3">
+
+
+<div class="card">
+
+    <div class="card-body">
+        <h1 class="card-title"><a href="/2019/01/%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81-influxdb/">Начало работы с InfluxDB</a></h1>
+        <h6 class="card-subtitle mb-2 text-muted">
+            20.01.2019 - 
+            vvuri -
+            Reading time ~2 Minutes
+        </h6>
+
+        <p class="card-text"><p>InfluxData представляет собой набор приложений, написанных на языке Go:</p>
+
+<ul>
+<li>Telegraf - утилита для сбора измерений временных рядов.</li>
+<li>InfluxDB - кластеризуемая база данных, специально разработанная для хранения временных рядов.</li>
+<li>Chronograf - инструмент для визуализации временных рядов. Web приложение для настройки графиков и dashboard&rsquo;ов.</li>
+<li>Kapacitor - утилита для обработки значений временных рядов и контроля отклонений значений.</li>
+</ul>
+
+<p>Скачиваем последнюю версию InfluxDB с <a href="https://influxdata.com/downloads">сайта</a>, и устанавливаем.</p>
+
+<pre><code class="language-bash">$ wget https://s3.amazonaws.com/influxdb/influxdb_0.9.6.1_amd64.deb
+$ sudo dpkg -i influxdb_0.9.6.1_amd64.deb
+</code></pre>
+
+<p>После установки запускаем сервис influxdb:</p>
+
+<pre><code class="language-bash">$ sudo service influxdb start
+  Starting the process influxdb [ OK ]
+  influxdb process was started [ OK ]
+</code></pre>
+
+<h4 id="influx">influx</h4>
+
+<blockquote>
+<p>show databases<br>
+create database mydb<br>
+use mydb</p>
+
+<p>insert cpu,host=serverA,region=Yekaterinburg value=0.35<br>
+insert cpu,host=serverA,region=Yekaterinburg value=0.26<br>
+    Мы добавили 2 точки измерения с именем &ldquo;cpu&rdquo; со значениями &ldquo;0.35&rdquo; и &ldquo;0.26&rdquo; и с тегами &ldquo;host&rdquo; и &ldquo;region&rdquo;.
+insert cpu,host=serverB,region=Yekaterinburg value=0.89<br></p>
+
+<p>select * from cpu</p>
+</blockquote>
+
+<h4 id="http">HTTP</h4>
+
+<pre><code>curl -i -XPOST 'http://localhost:8086/write?db=mydb' --data-binary 'cpu,host=serverA,region=Yekaterinburg value=0.11'
+</code></pre>
+
+<p>добавляем через HTTP API точки по пути /write. Имя базы данных передается URL параметром db, а строка данных передается в теле запроса.</p>
+
+<pre><code>curl -G 'http://localhost:8086/query?pretty=true' --data-urlencode &quot;db=mydb&quot; --data-urlencode &quot;q=select * from cpu where host='serverB'&quot;
+</code></pre>
+
+<p>Получить данные</p>
+
+<h4 id="теория">Теория:</h4>
+
+<p><a href="http://blog.egrik.ru/2016/01/influxdata-1-influxdb.html">Описание-influxdb</a>, <a href="http://blog.egrik.ru/2016/01/influxdata-2-telegraf.html">Описание-telegraf</a>, <a href="http://blog.egrik.ru/2016/01/influxdata-3-chronograf.html">Описание-chronograf</a></p>
+
+<p>Данные в InfluxDB организованы в виде временного ряда, который содержит измеренные значения, например загрузка процессора - &ldquo;cpu_load&rdquo; или температура - &ldquo;temperature&rdquo;. Временной ряд содержит 0 или несколько точек, по одной на каждое значение измерения метрики. Каждая точка содержит время (timestamp), имя измерения или метрики (measurement), не менее одного поля (fields) в формате ключ-значения (например value=0.5), и 0 или несколько тегов (tags) в формате ключ-значение, которые содержат метаинформацию о собранном значении (host=&ldquo;server01&rdquo;, region=&ldquo;Yekaterinburg&rdquo;).</p>
+
+<p>Если провести аналогию с SQL базой данных, то измерение (measurement) - это таблица, в которой первичным ключом является колонка со временем (timestamp). Теги (tags) - это индексированные колонки, а поля (fields) - это не индексированные колонки. Только в отличие от SQL базы данных в InfluxDB, можно сохранить миллионы измерений (measurement), вы не обязаны заранее определять схему, и null значения не будут храниться.</p>
+
+<p>В общем виде формат добавления новой точки измерения в БД выглядит так:
+``<code>
+&lt;measurement&gt;[,&lt;;tag-key&gt;=&lt;tag-value&gt;...] &lt;field-key&gt;=&lt;field-value&gt;[,&lt;field2-key&gt;=&lt;field2-value&gt;...] [unix-nano-timestamp]
+</code></p></p>
+
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">
+            
+                
+                    
+                        <a href="/categories/#database" class="badge badge-primary"><span>database</span></a>
+                    
+                
+                
+                    
+                        <a href="/tags/#influxdb" class="badge badge-secondary"><span>influxdb</span></a>
+                    
+                        <a href="/tags/#grafana" class="badge badge-secondary"><span>grafana</span></a>
+                    
+                
+            
+        </small>
+    </div>
+</div>
+</div>
+
+
+        </main><footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md">
+                <h5>All blogs</h5>
+                &copy; 2019 vvuri                
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>&nbsp;</h5>
+                &nbsp;
+            </div>
+            <div class="col-3 col-md">
+                <h5>Site</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="/categories/">Categories</a></li>
+                    <li><a class="text-muted" href="/tags/">Tags</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/js/vendor.min.3e5871eaa50b3aed8dc727d7e11c94314c0672556c7b4f2bd0dbf8dd0c00051f.js"></script>
+
+
+</body>
+</html>

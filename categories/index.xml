@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>Code</title>
+      <link>/categories/code/</link>
+      <pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database</title>
+      <link>/categories/database/</link>
+      <pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Designe</title>
       <link>/categories/designe/</link>
       <pubDate>Sun, 16 Apr 2017 14:24:08 +0300</pubDate>
@@ -71,6 +89,15 @@
       <pubDate>Sun, 16 Apr 2017 14:19:23 +0300</pubDate>
       
       <guid>/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Voip</title>
+      <link>/categories/voip/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/voip/</guid>
       <description></description>
     </item>
     
